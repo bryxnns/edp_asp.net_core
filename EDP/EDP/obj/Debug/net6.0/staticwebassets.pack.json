@@ -269,8 +269,12 @@
       "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
     },
     {
-      "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-01.jpg",
-      "PackagePath": "staticwebassets\\images\\bg-01.jpg"
+      "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-01.png",
+      "PackagePath": "staticwebassets\\images\\bg-01.png"
+    },
+    {
+      "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-02.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-02.jpg"
     },
     {
       "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\icons\\favicon.ico",

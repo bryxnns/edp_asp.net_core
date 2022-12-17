@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xa3o8ohrWotjgIYEY8wt0rPmsI8fkWxVYdeFPSchQnU=",
+  "Hash": "GTFH22TSidBBLIG+SQZjOfz6rLUK/n9jeHszglyYOlU=",
   "Source": "EDP",
   "BasePath": "_content/EDP",
   "Mode": "Default",
@@ -1173,12 +1173,12 @@
       "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-01.jpg",
+      "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-01.png",
       "SourceId": "EDP",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\",
       "BasePath": "_content/EDP",
-      "RelativePath": "images/bg-01.jpg",
+      "RelativePath": "images/bg-01.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1187,7 +1187,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bg-01.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\bg-01.png"
+    },
+    {
+      "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-02.jpg",
+      "SourceId": "EDP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\",
+      "BasePath": "_content/EDP",
+      "RelativePath": "images/bg-02.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bg-02.jpg"
     },
     {
       "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\icons\\favicon.ico",
