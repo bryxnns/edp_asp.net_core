@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\214088R\\Documents\\EDP ASP.Net Core\\EDP\\EDP\\EDP.csproj": {}
+    "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj": {}
   },
   "projects": {
-    "D:\\Users\\214088R\\Documents\\EDP ASP.Net Core\\EDP\\EDP\\EDP.csproj": {
+    "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\214088R\\Documents\\EDP ASP.Net Core\\EDP\\EDP\\EDP.csproj",
+        "projectUniqueName": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
         "projectName": "EDP",
-        "projectPath": "D:\\Users\\214088R\\Documents\\EDP ASP.Net Core\\EDP\\EDP\\EDP.csproj",
-        "packagesPath": "D:\\Users\\214088R\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\214088R\\Documents\\EDP ASP.Net Core\\EDP\\EDP\\obj\\",
+        "projectPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
+        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "D:\\Users\\214088R\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +39,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

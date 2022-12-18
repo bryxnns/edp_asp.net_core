@@ -24,3 +24,34 @@ D:\Users\214088R\Documents\EDP ASP.Net Core\EDP\EDP\obj\Debug\net6.0\refint\EDP.
 D:\Users\214088R\Documents\EDP ASP.Net Core\EDP\EDP\obj\Debug\net6.0\EDP.pdb
 D:\Users\214088R\Documents\EDP ASP.Net Core\EDP\EDP\obj\Debug\net6.0\EDP.genruntimeconfig.cache
 D:\Users\214088R\Documents\EDP ASP.Net Core\EDP\EDP\obj\Debug\net6.0\ref\EDP.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\appsettings.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\EDP.staticwebassets.runtime.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\EDP.exe
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\EDP.deps.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\EDP.runtimeconfig.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\EDP.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\EDP.pdb
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.csproj.AssemblyReference.cache
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.AssemblyInfoInputs.cache
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.AssemblyInfo.cs
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.RazorAssemblyInfo.cache
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.RazorAssemblyInfo.cs
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets\msbuild.EDP.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets\msbuild.build.EDP.props
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EDP.props
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EDP.props
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\scopedcss\bundle\EDP.styles.css
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\scopedcss\projectbundle\EDP.bundle.scp.css
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\refint\EDP.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.pdb
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.genruntimeconfig.cache
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\ref\EDP.dll

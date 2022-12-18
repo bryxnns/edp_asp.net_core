@@ -16,3 +16,36 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+a.button {
+    display: block;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    color: #7796A8;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 140px;
+    height: 34px;
+    vertical-align: middle;
+    transition: 0.4s;
+    font-size: var(--bs-nav-link-font-size);
+    box-shadow: 0 0 20px rgba(119, 150, 168, 0.2);
+    border: 1px solid rgba(119, 150, 168, 1);
+    line-height: 33px;
+    margin-top: 3px;
+}
+
+
+a.button:hover {
+    color: white;
+    width:;
+    box-shadow: 0 0 20px rgba(119, 150, 168, 0.6);
+    background-color: rgba(119, 150, 168, 1);
+}
+
+.login {
+    color: rgb(119, 150, 168);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(119, 150, 168, 1);
+}
