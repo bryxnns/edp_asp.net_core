@@ -3,6 +3,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+// Entity Framework Core - Managing Schemas - Migrations
+// https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs
+builder.Services.AddDbContext<EDP.MyDbContext>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
