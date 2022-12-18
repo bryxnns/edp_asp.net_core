@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <Compile Remove="Pages\Models\**" />
+    <Content Remove="NewFolder\**" />
+    <Content Remove="Pages\Models\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Pages\Models\**" />
+    <None Remove="NewFolder\**" />
+    <None Remove="Pages\Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <UpToDateCheckInput Remove="Pages\Register.cshtml" />
   </ItemGroup>
 

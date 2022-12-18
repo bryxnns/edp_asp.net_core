@@ -33,25 +33,9 @@ a.button {
     box-shadow: 0 0 20px rgba(119, 150, 168, 0.2);
     border: 1px solid rgba(119, 150, 168, 1);
     line-height: 33px;
+    margin-top: 3px;
 }
 
-button {
-    cursor: pointer;
-    border: 0;
-    margin: 0 10px;
-    width: 140px;
-    padding: 4px 0;
-    box-shadow: 0 0 20px rgba(119, 150, 168, 0.2);
-    transition: 0.4s;
-    font-size: var(--bs-nav-link-font-size);
-}
-
-button:hover {
-    color: white;
-    width:;
-    box-shadow: 0 0 20px rgba(119, 150, 168, 0.6);
-    background-color: rgba(119, 150, 168, 1);
-}
 
 a.button:hover {
     color: white;
