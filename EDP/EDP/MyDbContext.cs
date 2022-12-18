@@ -17,6 +17,7 @@ namespace EDP
         }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Claimed_Voucher> ClaimedVouchers { get; set; }
+        public DbSet<Voucher> Vouchers { get; set; }
         public DbSet<Purchase_History> PurchaseHistories { get; set; }
         public DbSet<Purchased_Item> PurchasedItems { get; set; }
     }
