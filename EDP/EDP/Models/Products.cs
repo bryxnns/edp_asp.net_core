@@ -10,22 +10,22 @@ namespace EDP.Models
 		[Required, Display(Name = "Product Name")]
 		public string product_name { get; set; } = string.Empty;
 
-        [Required, Display(Name = "Product Description")]
+        [Required, MaxLength(400), Display(Name = "Product Description")]
         public string description { get; set; } = string.Empty;
 
         [Required, Display(Name = "Product Category")]
         public string category { get; set; } = string.Empty;
 
-        [Required, Display(Name = "Product_Price")]
-        public int price { get; set; }
+        [Required, RegularExpression(@"^.\.(\d{1, 2})$"), Display(Name = "Product_Price")]
+        public decimal price { get; set; }
 
         [Required, Display(Name = "Product_Stock")]
         public int stock { get; set; }
 
         [Required, Display(Name = "Expiry Date")]
-        public DateOnly expiry_date { get; set; } 
+        public string expiry_date { get; set; } = string.Empty;
 
-		
+
 
     }
 }

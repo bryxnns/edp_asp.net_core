@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace EDP.Models
 {
-	public class User_Donation
+    public class User_Donation
 	{
 		[Required, Key]
 		public string user_donation_id { get; set; } = string.Empty;
@@ -13,13 +14,13 @@ namespace EDP.Models
 		[Required, Display(Name = "Unit Number")]
 		public string unit_no { get; set; } = string.Empty;
 
-		[Required, DataType(DataType.PostalCode), Display(Name = "Postal Code")]
+		[Required, DataType(DataType.PostalCode), Range(6, 6), Display(Name = "Postal Code")]
         public int postal_code { get; set; }
 		
         [Required, Display(Name = "Collection Date")]
-		public string collection_date { get; set; }	= string.Empty;
+		public string collection_date { get; set; } = string.Empty;
 
-		[Required, Display(Name = "Collection Time")]
+        [Required, Display(Name = "Collection Time")]
 		public string collection_time { get; set; } = string.Empty;
 
         [Required, Display(Name = "Type of Waste")]

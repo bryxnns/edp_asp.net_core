@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace EDP.Models
 {
-	public class Donation_Details
+    [Keyless]
+    public class Donation_Details
 	{
         [Required, Display(Name = "Waste Weight")]
         public string waste_weight { get; set; } = string.Empty;
