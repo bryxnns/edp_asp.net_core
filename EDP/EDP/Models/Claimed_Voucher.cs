@@ -7,7 +7,7 @@ namespace EDP.Models
 		[Required, Key]
 		public string claimed_voucher_id { get; set; }
 		[Required]
-		public string user_id { get; set; }
+		public string User_ID { get; set; }
 
 		[Required]
 		public string voucher_id { get; set; }
