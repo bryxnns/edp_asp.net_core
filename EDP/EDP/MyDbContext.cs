@@ -20,5 +20,13 @@ namespace EDP
         public DbSet<Voucher> Vouchers { get; set; }
         public DbSet<Purchase_History> PurchaseHistories { get; set; }
         public DbSet<Purchased_Item> PurchasedItems { get; set; }
+
+        public DbSet<User_Donation> UserDonations { get; set; }
+
+        public DbSet<Donation_Details> DonationDetails { get; set; }
+
+        public DbSet<Products> Products { get; set; }
+
+        public DbSet<Reviews> Reviews { get; set; }
     }
 }
