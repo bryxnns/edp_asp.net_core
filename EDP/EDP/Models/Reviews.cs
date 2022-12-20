@@ -4,7 +4,7 @@ namespace EDP.Models
 {
 	public class Reviews
 	{
-		[Required, Key]
+		[Required, Key, Display(Name = "Review ID")]
 		public string review_id { get; set; } = string.Empty;
 
 		[Required]
@@ -13,7 +13,7 @@ namespace EDP.Models
 		[Required]
 		public string product_id { get; set; } = string.Empty;
 
-		[Required]
+		[Required, Display(Name = "Reviews")]
 		public string review { get; set; } = string.Empty;
 	}
 }

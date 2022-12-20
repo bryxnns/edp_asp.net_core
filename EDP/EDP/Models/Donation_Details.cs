@@ -18,7 +18,7 @@ namespace EDP.Models
         [Required]
         public bool drop_off_done { get; set; }
 
-        [Required]
+        [Required, Display(Name = "Drop Off Point")]
         public string drop_off_point { get; set; } = string.Empty;
 
         [Required]

@@ -1,0 +1,51 @@
+﻿@page
+@model EDP.Pages.Product.IndexModel
+@inject EDP.Services.ProductService _productService
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].product_id)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].product_name)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].description)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].category)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].stock)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].price)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].expiry_date)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductList[0].product_image)</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            @foreach (var item in Model.ProductList)
+            {
+                <tr>
+                    <td>@item.product_id</td>
+                    <td>@item.product_name</td>
+                    <td>@item.description</td>
+                    <td>@item.category</td>
+                    <td>@item.stock</td>
+                    <td>@item.price</td>
+                    <td>@item.expiry_date</td>
+                    <td>
+                        <span asp-validation-for="Upload" class="text-danger"></span>
+                        <img id="imgPreview" style="height:100px;width:100px;object-fit:cover"
+                         src="@(string.IsNullOrEmpty(item.product_image) ? "/images/user.png" : item.product_image)"
+                            onerror="this.src='/images/user.png'" />
+                        <input class="form-control d-none" asp-for="@item.product_image" />
+                    </td>
+                    <td>
+                        <a asp-page="/Product/Details" asp-route-id="@item.product_id">Update</a>
+                        @*<a asp-route-id="@item.product_id">Delete</a>*@
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary mt-3" asp-page="/Product/Add" asp-route-userid="@Model.UserID">Add Products</a>

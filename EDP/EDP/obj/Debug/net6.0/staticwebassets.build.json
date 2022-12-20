@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UdQk1yQVGsypN3o40ksLEStHElBRmSAJ0b8UKm8fRhs=",
+  "Hash": "HwhK26eemvtqh08rYWGLhpB+HGKSJ0yD80+MXJOWcAE=",
   "Source": "EDP",
   "BasePath": "_content/EDP",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\icons\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\wwwroot\\images\\user.png",
+      "SourceId": "EDP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\wwwroot\\",
+      "BasePath": "_content/EDP",
+      "RelativePath": "images/user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\wwwroot\\js\\main.js",
