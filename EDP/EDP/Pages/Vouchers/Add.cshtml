@@ -1,0 +1,88 @@
+﻿@page
+@model EDP.Pages.Vouchers.AddModel
+@{
+    ViewData["Title"] = "Add Employee";
+}
+@*use ctrl k+d to format code *@
+<h1 class="display-4">@ViewData["Title"]</h1>
+<form class="mt-3" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="row">
+<div class="col-md-8">
+     <input type="hidden" asp-for="MyVoucher.voucher_id" id="voucherid" value="@Model.UUID"/>
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="MyVoucher.voucher_name"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="MyVoucher.voucher_name"  />
+            <span asp-validation-for="MyVoucher.voucher_name" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="MyVoucher.expiry_date"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="date" asp-for="MyVoucher.expiry_date" id="Expiry" oninput="checkDate()"/>
+            <span asp-validation-for="MyVoucher.expiry_date" class="text-danger" id="expiryError"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="MyVoucher.percentage_off"></label>
+        <div class="col-sm-10">
+            <input class="form-control"  type="number" asp-for="MyVoucher.percentage_off" />
+            <span asp-validation-for="MyVoucher.percentage_off" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="MyVoucher.points_required"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="number" asp-for="MyVoucher.points_required" />
+            <span asp-validation-for="MyVoucher.points_required" class="text-danger"></span>
+                    @*  asp-validation-for is used to show the validation we coded in the cs also*@
+        </div>
+       </div>
+       </div>
+</div>
+
+    <div>
+        <input type="submit" id="submitBtn" value="Add" class="btn btn-primary" />
+        <a class="btn btn-secondary ms-2" href="/Vouchers">Cancel</a>
+    </div>
+</form>
+<script>
+    function checkDate(){
+        var tdy=new Date();
+        var expiryDate=document.findElementById("Expiry").value;
+        var btn = document.getElementById('btSubmit');
+        if(expiryDate<=tdy){
+            document.findElementById("expiryError").text="Expiry date can't be before or be today's date. "
+            btn.disabled=true;
+        }
+        else{
+            btn.disabled=false;
+        }
+    }
+    $document.ready(function()){
+        $(function(){
+            $('#Expiry').datetimepicker();
+        });
+    };
+    function create_UUID(){
+    var dt = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (dt + Math.random()*16)%16 | 0;
+        dt = Math.floor(dt/16);
+        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    });
+    document.findElementById("voucherid").value=uuid;
+}
+</script>
+
+@*Cilent side validation*@
+@section Scripts {
+@{
+await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
