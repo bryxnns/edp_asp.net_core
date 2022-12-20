@@ -10,7 +10,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<EDP.MyDbContext>();
 
 builder.Services.AddScoped<VoucherService>();
-
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ReviewService>();
+builder.Services.AddScoped<UserDonationService>();
+builder.Services.AddScoped<DonationDetailsService>();
 
 var app = builder.Build();
 

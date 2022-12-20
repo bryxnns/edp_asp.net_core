@@ -28,5 +28,7 @@ namespace EDP
         public DbSet<Products> Products { get; set; }
 
         public DbSet<Reviews> Reviews { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -5,7 +5,7 @@ namespace EDP.Models
 {
     public class User_Donation
 	{
-		[Required, Key]
+		[Required, Key, Display(Name = "User Donation ID")]
 		public string user_donation_id { get; set; } = string.Empty;
 
 		[Required, Display(Name = "Address")]
@@ -14,7 +14,7 @@ namespace EDP.Models
 		[Required, Display(Name = "Unit Number")]
 		public string unit_no { get; set; } = string.Empty;
 
-		[Required, DataType(DataType.PostalCode), Range(6, 6), Display(Name = "Postal Code")]
+		[Required, DataType(DataType.PostalCode), Display(Name = "Postal Code")]
         public int postal_code { get; set; }
 		
         [Required, Display(Name = "Collection Date")]

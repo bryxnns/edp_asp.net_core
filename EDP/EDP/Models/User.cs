@@ -4,7 +4,7 @@ namespace EDP.Models
 {
 	public class User
 	{
-		[Required]
+		[Required, Key]
 		public string User_ID { get; set; } = string.Empty;
 
 		[DataType(DataType.EmailAddress)]
