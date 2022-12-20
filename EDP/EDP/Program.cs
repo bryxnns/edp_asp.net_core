@@ -1,3 +1,4 @@
+using EDP;
 using EDP.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,7 @@ builder.Services.AddRazorPages();
 
 // Entity Framework Core - Managing Schemas - Migrations
 // https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs
-builder.Services.AddDbContext<EDP.MyDbContext>();
+builder.Services.AddDbContext<MyDbContext>();
 
 builder.Services.AddScoped<VoucherService>();
 builder.Services.AddScoped<ProductService>();

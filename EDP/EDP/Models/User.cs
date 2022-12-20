@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EDP.Models
 {
@@ -9,28 +10,28 @@ namespace EDP.Models
 
 		[DataType(DataType.EmailAddress)]
 		[Required]
-		public string Email { get; set; } = string.Empty;
+		public string email { get; set; } = string.Empty;
 
 		[DataType(DataType.Password)]
 		[Required]
-		public string Password { get; set; } = string.Empty;
+		public string password { get; set; } = string.Empty;
 
 		[Required]
-		public string Name { get; set; } = string.Empty;
+		public string name { get; set; } = string.Empty;
 
-		public string Address { get; set; } = string.Empty;
+		public string address { get; set; } = string.Empty;
 
-		public string Unit_No { get; set; } = string.Empty;
+		public string unit_No { get; set; } = string.Empty;
 
 		[DataType(DataType.PostalCode)]
-		public string Postal_Code { get; set; } = string.Empty;
+		public string postal_Code { get; set; } = string.Empty;
 
 		[DataType(DataType.PhoneNumber)]
-		public string Phone_No { get; set; } = string.Empty;
+		public string phone_No { get; set; } = string.Empty;
 
-		public string Roles { get; set; } = string.Empty;
+		public string roles { get; set; } = string.Empty;
 
-		public string Points { get; set; } = string.Empty;
+		public string points { get; set; } = string.Empty;
 
 
 	}

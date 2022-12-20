@@ -55,8 +55,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Vouchers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Vouchers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Vouchers/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/_ViewImports.cshtml]

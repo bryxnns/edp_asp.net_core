@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\EDP.csproj": {}
+    "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\EDP.csproj": {
+    "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\EDP.csproj",
+        "projectUniqueName": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj",
         "projectName": "EDP",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\EDP.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\obj\\",
+        "projectPath": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj",
+        "packagesPath": "C:\\Users\\aaral\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\aaral\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,17 +42,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -66,8 +61,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
