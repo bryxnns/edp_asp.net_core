@@ -32,19 +32,12 @@ namespace EDP.Services
             _context.SaveChanges();
         }
 
-        public Boolean DeleteVoucher(string id)
+        public void DeleteVoucher(Voucher voucher)
         {
-            Voucher? voucher = _context.Vouchers.FirstOrDefault(
-            x => x.voucher_id.Equals(id));
-            if (voucher != null)
-            {
-                _context.Vouchers.Remove(voucher);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+
+            _context.Vouchers.Remove(voucher);
+            _context.SaveChanges();
+
         }
     }
 }
