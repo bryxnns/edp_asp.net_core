@@ -17,7 +17,7 @@ namespace EDP.Services
 
         public List<Products> GetProductsByUserId(string userid)
         {
-            return _context.Products.Where(x => x.User_ID.Equals(userid)).ToList();
+            return _context.Products.Where(x => x.user_id.Equals(userid)).ToList();
         }
 
         public Products? GetProductsById(string id)
@@ -37,18 +37,10 @@ namespace EDP.Services
             _context.SaveChanges();
         }
 
-        public Boolean DeleteProduct(string id)
+        public void deleteProduct(Products product)
         {
-            Products? product = _context.Products.FirstOrDefault(x => x.product_id.Equals(id));
-            if (product != null)
-            {
-                _context.Products.Remove(product);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            _context.Products.Remove(product);
+            _context.SaveChanges();
         }
     }
 }

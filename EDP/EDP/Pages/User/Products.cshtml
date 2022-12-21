@@ -1,0 +1,34 @@
+﻿@page
+@model EDP.Pages.User.ProductsModel
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+<div class="container">
+    <div class="row featured_filter" jd="MixItUp744B27">
+        @{
+            @foreach (var item in Model.AllProductsList) 
+            {
+            <div class="col-lg-3 col-md-4 col-md-6">
+                <div class="featured_item">
+                    <div class="featured_item_pic set-bg">
+                        <a asp-page="/User/IndivProducts" asp-route-id="@item.product_id" style="text-decoration:none">
+                            <img id="imgPreview" style="height:100px;width:100px;object-fit:cover"
+                                src="@(string.IsNullOrEmpty(item.product_image) ? "/images/user.png" : item.product_image)"
+                                onerror="this.src='/images/user.png'" />
+                            <input class="form-control d-none" asp-for="@item.product_image" />
+                        </a>
+                    </div>
+                    <div class="featured_item_text">
+                        <a asp-page="/User/IndivProducts" asp-route-id="@item.product_id" style="text-decoration:none">
+                            <h6>@item.product_name</h6>
+                            <h5>@item.price</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            }
+        }
+    </div>
+</div>  

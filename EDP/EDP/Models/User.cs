@@ -6,7 +6,7 @@ namespace EDP.Models
 	public class User
 	{
 		[Required, Key]
-		public string User_ID { get; set; } = string.Empty;
+		public string user_id { get; set; } = string.Empty;
 
 		[DataType(DataType.EmailAddress)]
 		[Required]

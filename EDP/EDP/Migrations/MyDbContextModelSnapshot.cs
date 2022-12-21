@@ -17,10 +17,10 @@ namespace EDP.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.1")
+                .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("EDP.Models.Cart", b =>
                 {
@@ -97,10 +97,6 @@ namespace EDP.Migrations
                     b.Property<string>("product_id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("User_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("category")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -127,6 +123,10 @@ namespace EDP.Migrations
 
                     b.Property<int>("stock")
                         .HasColumnType("int");
+
+                    b.Property<string>("user_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("product_id");
 
@@ -197,15 +197,15 @@ namespace EDP.Migrations
                     b.Property<string>("review_id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("User_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("product_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("review")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("user_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -216,46 +216,46 @@ namespace EDP.Migrations
 
             modelBuilder.Entity("EDP.Models.User", b =>
                 {
-                    b.Property<string>("User_ID")
+                    b.Property<string>("user_id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Address")
+                    b.Property<string>("address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Phone_No")
+                    b.Property<string>("phone_No")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Points")
+                    b.Property<string>("points")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Postal_Code")
+                    b.Property<string>("postal_Code")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Roles")
+                    b.Property<string>("roles")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Unit_No")
+                    b.Property<string>("unit_No")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("User_ID");
+                    b.HasKey("user_id");
 
                     b.ToTable("Users");
                 });
@@ -264,10 +264,6 @@ namespace EDP.Migrations
                 {
                     b.Property<string>("user_donation_id")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("User_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("address")
                         .IsRequired()
@@ -289,6 +285,10 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("unit_no")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("user_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
