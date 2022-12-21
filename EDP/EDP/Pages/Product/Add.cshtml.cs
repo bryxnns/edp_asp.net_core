@@ -80,7 +80,7 @@ namespace EDP.Pages.Product
                 //TempData["FlashMessage.Text"] = string.Format("Product {0} is added", myProduct.product_name);
                 
                 //shld redirect to the particular merchant products page
-                return Redirect("/Product?userid=" + myProduct.User_ID);
+                return Redirect("/Product?userid=" + myProduct.user_id);
             }
             return Page();
         }

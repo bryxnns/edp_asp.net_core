@@ -65,7 +65,7 @@ namespace EDP.Pages.Product
                 _productService.UpdateProduct(myProduct);
                 //TempData["FlashMessage.Type"] = "success";
                 //TempData["FlashMessage.Text"] = string.Format("Product {0} is updated", myProduct.product_name);
-                return Redirect("/Product?userid=" + myProduct.User_ID);
+                return Redirect("/Product?userid=" + myProduct.user_id);
             }
             return Page();
         }

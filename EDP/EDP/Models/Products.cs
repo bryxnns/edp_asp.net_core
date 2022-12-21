@@ -30,6 +30,6 @@ namespace EDP.Models
         public string product_image { get; set; } = string.Empty;
 
         [Required]
-        public string User_ID { get; set; } = string.Empty;
+        public string user_id { get; set; } = string.Empty;
     }
 }

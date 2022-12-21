@@ -41,7 +41,7 @@
                     </td>
                     <td>
                         <a asp-page="/Product/Details" asp-route-id="@item.product_id">Update</a>
-                        @*<a asp-route-id="@item.product_id">Delete</a>*@
+                        <a asp-page="/Product/Delete" asp-route-id="@item.product_id">Delete</a>
                     </td>
                 </tr>
             }
