@@ -219,3 +219,99 @@ C:\Users\ASUS\OneDrive\Documents\y2s2\enterprise dev proj\source\repos\Assigment
 C:\Users\ASUS\OneDrive\Documents\y2s2\enterprise dev proj\source\repos\Assigment\EDP\EDP\obj\Debug\net6.0\EDP.pdb
 C:\Users\ASUS\OneDrive\Documents\y2s2\enterprise dev proj\source\repos\Assigment\EDP\EDP\obj\Debug\net6.0\EDP.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive\Documents\y2s2\enterprise dev proj\source\repos\Assigment\EDP\EDP\obj\Debug\net6.0\ref\EDP.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Humanizer.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\obj\Debug\net6.0\EDP.csproj.CopyComplete
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.csproj.AssemblyReference.cache
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.AssemblyInfoInputs.cache
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.AssemblyInfo.cs
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.csproj.CoreCompileInputs.cache
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.RazorAssemblyInfo.cache
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.RazorAssemblyInfo.cs
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\refint\EDP.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.pdb
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\appsettings.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\EDP.staticwebassets.runtime.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\EDP.exe
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\EDP.deps.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\EDP.runtimeconfig.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\EDP.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\EDP.pdb
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Humanizer.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\scopedcss\bundle\EDP.styles.css
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\scopedcss\projectbundle\EDP.bundle.scp.css
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.csproj.CopyComplete
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.genruntimeconfig.cache
+C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\ref\EDP.dll

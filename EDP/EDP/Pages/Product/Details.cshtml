@@ -1,0 +1,93 @@
+﻿@page
+@model EDP.Pages.Product.DetailsModel
+@{
+    ViewData["Title"] = "Product Details";
+}
+<h1 class="display-4">@ViewData["Title"]</h1>
+
+<form class="mt-3" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="row mb-3">
+        <input type="hidden" asp-for="myProduct.product_id" id="productid"/>
+        <input type="hidden" asp-for="myProduct.User_ID"/>
+
+        <label class="col-sm-2 col-form-label" asp-for="myProduct.product_name"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="myProduct.product_name" />
+            <span asp-validation-for="myProduct.product_name" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="myProduct.description"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="myProduct.description" />
+            <span asp-validation-for="myProduct.description" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="myProduct.category"></label>
+        <div class="col-sm-10">
+            @Html.DropDownListFor(m => m.myProduct.category,
+            new SelectList(AddModel.CategoryList, "category_name", "category_name"), "-- Select --", new {@class = "form-select"})
+            <span asp-validation-for="myProduct.category" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="myProduct.price"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="myProduct.price" />
+            <span asp-validation-for="myProduct.price" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="myProduct.stock"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="myProduct.stock" />
+            <span asp-validation-for="myProduct.stock" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="myProduct.expiry_date"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="myProduct.expiry_date" />
+            <span asp-validation-for="myProduct.expiry_date" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <input type="file" accept="image/*" asp-for="Upload" class="form-control" onchange="showImgPreview(this)" />
+        <span asp-validation-for="Upload" class="text-danger"></span>
+        <img id="imgPreview" class="rounded-circle" style="height:300px;width:300px;object-fit:cover"
+             src="@(string.IsNullOrEmpty(Model.myProduct.product_image) ? "/images/user.png" : Model.myProduct.product_image)"
+             onerror="this.src='/images/user.png'" />
+    </div>
+
+
+    <div>
+        <input type="submit" value="Update" class="btn btn-primary" />
+    </div>
+</form>
+
+<script>
+    function showImgPreview(input) {
+        if (input.files[0]) {
+            var uploadimg = new FileReader();
+            uploadimg.onload = function (displayimg) {
+                $("#imgPreview").attr('src', displayimg.target.result);
+            }
+            uploadimg.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+@section Scripts {
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

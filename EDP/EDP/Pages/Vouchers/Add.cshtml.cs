@@ -42,6 +42,7 @@ namespace EDP.Pages.Vouchers
                     //TempData["FlashMessage.Type"] = "danger";
                     //TempData["FlashMessage.Text"] = string.Format("Voucher ID {0} alreay exists", MyVoucher.voucher_id);
                     return Page();
+                    //ModelState.AddModelError("", error.Description);
                 }
 
                 //Add Voucher 

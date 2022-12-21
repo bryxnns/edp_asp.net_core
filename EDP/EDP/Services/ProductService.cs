@@ -12,9 +12,14 @@ namespace EDP.Services
 
         public List<Products> GetAll()
         {
-            return _context.Products.OrderBy(m => m.product_id).ToList();
-
+            return _context.Products.OrderBy(d => d.product_id).ToList();
         }
+
+        public List<Products> GetProductsByUserId(string userid)
+        {
+            return _context.Products.Where(x => x.User_ID.Equals(userid)).ToList();
+        }
+
         public Products? GetProductsById(string id)
         {
             Products? product = _context.Products.FirstOrDefault(x => x.product_id.Equals(id));
@@ -30,6 +35,20 @@ namespace EDP.Services
         {
             _context.Products.Update(product);
             _context.SaveChanges();
+        }
+
+        public Boolean DeleteProduct(string id)
+        {
+            Products? product = _context.Products.FirstOrDefault(x => x.product_id.Equals(id));
+            if (product != null)
+            {
+                _context.Products.Remove(product);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
