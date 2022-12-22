@@ -17,11 +17,13 @@ namespace EDP.Pages.Vouchers
         public Voucher MyVoucher { get; set; } = new();
 
         public string UUID;
+        public DateTime now = DateTime.Now;
 
 
         public void OnGet()
         {
             generateUuid();
+            MyVoucher.expiry_date = now.AddDays(1);
         }
         public void generateUuid()
         {
@@ -39,12 +41,17 @@ namespace EDP.Pages.Vouchers
                 MyVoucher.voucher_id);
                 if (voucher != null)
                 {
+                   
                     //TempData["FlashMessage.Type"] = "danger";
                     //TempData["FlashMessage.Text"] = string.Format("Voucher ID {0} alreay exists", MyVoucher.voucher_id);
                     return Page();
                     //ModelState.AddModelError("", error.Description);
                 }
-
+                //checking date
+                if (MyVoucher.expiry_date < now.AddDays(1))
+                {
+                    ModelState.AddModelError("early date", "Date has to be day after today");
+                }
                 //Add Voucher 
                 _voucherService.AddVoucher(MyVoucher);
                 //TempData["FlashMessage.Type"] = "success";

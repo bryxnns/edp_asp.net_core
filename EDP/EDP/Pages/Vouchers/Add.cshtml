@@ -54,10 +54,11 @@
 <script>
     function checkDate(){
         var tdy=new Date();
-        var expiryDate=document.findElementById("Expiry").value;
-        var btn = document.getElementById('btSubmit');
+        var expiryDate=document.getElementById("Expiry").value;
+        console.log(expiryDate);
+        var btn = document.getElementById('submitBtn');
         if(expiryDate<=tdy){
-            document.findElementById("expiryError").text="Expiry date can't be before or be today's date. "
+            document.getElementById("expiryError").text="Expiry date can't be before or be today's date. "
             btn.disabled=true;
         }
         else{
