@@ -12,6 +12,7 @@ builder.Services.AddDbContext<MyDbContext>();
 
 builder.Services.AddScoped<VoucherService>();
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ReviewService>();
 builder.Services.AddScoped<UserDonationService>();
 builder.Services.AddScoped<DonationDetailsService>();
