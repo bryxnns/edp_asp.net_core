@@ -27,10 +27,8 @@ namespace EDP
         public DbSet<User> Users { get; set; }
 		public DbSet<Purchased_Item> PurchasedItems { get; set; }
 
-		public DbSet<User_Donation> UserDonations { get; set; }
+        public DbSet<Donations> Donations { get; set; }
 
-		public DbSet<Donation_Details> DonationDetails { get; set; }
-
-		public DbSet<Products> Products { get; set; }	
+        public DbSet<Products> Products { get; set; }	
 	}
 }
