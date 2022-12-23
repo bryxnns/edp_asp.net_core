@@ -10,7 +10,13 @@ namespace EDP.Pages
     {
 
         private readonly UserService _userService;
-        public string user_id = Guid.NewGuid().ToString();
+
+        public string userID = Guid.NewGuid().ToString();
+
+        public RegisterModel(  user_service)
+        {
+			_userService = user_service;
+        }
 
         [BindProperty]
         public Models.User MyUser { get; set; } = new();
@@ -21,10 +27,12 @@ namespace EDP.Pages
 
 		public IActionResult OnPost()
         {
-            MyUser.user_id = user_id;
-            Models.User? user = _userService.GetUserById(MyUser.user_id);
-            _userService.AddUser(MyUser);
-            Debug.WriteLine("user registered successfully");
+            if (ModelState.IsValid)
+            {
+				MyUser.user_id = userID;
+				_userService.AddUser(MyUser);
+				Debug.WriteLine("user registered successfully");
+			}
 
 			return Page();
         }

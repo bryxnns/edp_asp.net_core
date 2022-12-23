@@ -10,6 +10,7 @@ builder.Services.AddRazorPages();
 // https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs
 builder.Services.AddDbContext<MyDbContext>();
 
+builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<VoucherService>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<ReviewService>();

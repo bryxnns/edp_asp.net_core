@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "votEYlWckAJ6vxDSIxJJFuM+0KNM008Xu+HRkf0hFKw=",
+  "Hash": "1/j/q46p+e0q4CrsAYD5LSH3BXaVebeYtoP60Cfp+aM=",
   "Source": "EDP",
   "BasePath": "_content/EDP",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EDP.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\cart.css",
+      "SourceId": "EDP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\",
+      "BasePath": "_content/EDP",
+      "RelativePath": "css/cart.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cart.css"
     },
     {
       "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\main.css",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\util.css"
+    },
+    {
+      "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\voucher.css",
+      "SourceId": "EDP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\",
+      "BasePath": "_content/EDP",
+      "RelativePath": "css/voucher.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\voucher.css"
     },
     {
       "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\favicon.ico",
@@ -1171,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\457f5c13-fcf8-496b-9b07-fed3195829f5.png",
+      "SourceId": "EDP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\",
+      "BasePath": "_content/EDP",
+      "RelativePath": "images/457f5c13-fcf8-496b-9b07-fed3195829f5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\457f5c13-fcf8-496b-9b07-fed3195829f5.png"
     },
     {
       "Identity": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-01.png",

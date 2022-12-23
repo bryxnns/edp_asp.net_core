@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\EDP.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
       "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\util.css",
       "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
+      "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\css\\voucher.css",
+      "PackagePath": "staticwebassets\\css\\voucher.css"
     },
     {
       "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\favicon.ico",
@@ -267,6 +275,10 @@
     {
       "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\457f5c13-fcf8-496b-9b07-fed3195829f5.png",
+      "PackagePath": "staticwebassets\\images\\457f5c13-fcf8-496b-9b07-fed3195829f5.png"
     },
     {
       "Id": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\wwwroot\\images\\bg-01.png",
