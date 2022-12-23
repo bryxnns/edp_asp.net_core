@@ -25,6 +25,6 @@ namespace EDP.Models
 
 
 		[Required]
-		public string User_ID { get; set; }
+		public string user_id { get; set; }
 	}
 }
