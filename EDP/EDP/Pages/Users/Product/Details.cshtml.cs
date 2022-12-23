@@ -3,16 +3,16 @@ using EDP.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace EDP.Pages.User
+namespace EDP.Pages.Users.Product
 {
-    public class IndivProductsModel : PageModel
+    public class DetailsModel : PageModel
     {
         private readonly ProductService _productService;
 
         [BindProperty]
         public Products myProduct { get; set; } = new();
 
-        public IndivProductsModel(ProductService productService)
+        public DetailsModel(ProductService productService)
         {
             _productService = productService;
         }

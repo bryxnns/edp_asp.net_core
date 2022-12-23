@@ -55,12 +55,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/User/IndivProducts.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxJbmRpdlByb2R1Y3RzLmNzaHRtbA==
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Users/Donation/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRG9uYXRpb25cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/User/Products.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxQcm9kdWN0cy5jc2h0bWw=
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Users/Donation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRG9uYXRpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Users/Donation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRG9uYXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Users/Donation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRG9uYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Users/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Users/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Volunteer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9sdW50ZWVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Volunteer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9sdW50ZWVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Volunteer/Requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9sdW50ZWVyXFJlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Vouchers/Add.cshtml]

@@ -13,8 +13,7 @@ builder.Services.AddDbContext<MyDbContext>();
 builder.Services.AddScoped<VoucherService>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<ReviewService>();
-builder.Services.AddScoped<UserDonationService>();
-builder.Services.AddScoped<DonationDetailsService>();
+builder.Services.AddScoped<DonationServices>();
 
 var app = builder.Build();
 
