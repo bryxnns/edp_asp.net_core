@@ -16,20 +16,10 @@
                 <br>
                 Points Required: @item.points_required
                 </p>
-                <a href="#" class="btn-block btn btn-primary">Claim</a>
+                <a asp-page="/ClaimedVouchers/AddClaim" asp-route-voucherid="@item.voucher_id" class="btn btn-primary">Claim</a>
             </div>
         </div>
     }
 }
-@*  <tr>
-    <td>@item.voucher_id</td>
-    <td>@item.voucher_name</td>
-    <td>@item.expiry_date.ToShortDateString()</td>
-    <td>@item.percentage_off</td>
-    <td>@item.points_required</td>
-    <td>
-    <a asp-page="/Vouchers/Update" asp-route-id="@item.voucher_id">Update</a>
-    <a asp-page="/Vouchers/Delete" asp-route-id="@item.voucher_id">Delete</a>
-    </td>
-    </tr>*@
+
 

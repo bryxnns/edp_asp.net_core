@@ -12,6 +12,7 @@ namespace EDP.Models
 		[Required]
 		public string voucher_id { get; set; }
 
-		public string voucher_code { get; set; }
+	
+		public string? voucher_code { get; set; }
 	}
 }
