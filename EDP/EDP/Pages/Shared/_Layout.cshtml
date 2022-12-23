@@ -36,9 +36,6 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
-
-
-
     <!--===============================================================================================-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -79,10 +76,9 @@
 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        
                     </ul>
 
-                     <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-page="#">
@@ -126,11 +122,11 @@
             </div>
         </nav>
     </header>
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -155,6 +151,34 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="winkel/js/google-map.js"></script>
     <script src="winkel/js/main.js"></script>
+
+    @*    Custom scripts*@
+    <script>
+        $(".RefreshQuantity").click(function () {
+            // Get the id from the link
+            var recordToUpdate = $(this).attr("data-id");
+            var quantity = $("#"+recordToUpdate).val();
+            console.log(recordToUpdate);
+            console.log(quantity);
+            if (recordToUpdate != '') {
+                // Perform the ajax post
+                //$.post("/CartActions/UpdateQuantity", { itemId: recordToUpdate, quantity: quantity });
+
+             $.ajax({
+                 type: "POST",
+            url: "/CartActions/UpdateQuantity",
+            data: { itemId: recordToUpdate, quantity: quantity },
+            success: function (response) {
+                alert(response.status);
+            },
+            error: function () {
+                alert("error");
+            }
+        });
+            }});
+
+
+    </script>
 
 </body>
 
