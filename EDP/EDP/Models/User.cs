@@ -30,7 +30,7 @@ namespace EDP.Models
 
 		public string roles { get; set; } = string.Empty;
 
-		public string points { get; set; } = string.Empty;
+		public int points { get; set; }
 
 
 	}

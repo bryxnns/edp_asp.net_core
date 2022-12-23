@@ -27,16 +27,16 @@ namespace EDP.Migrations
                     b.Property<string>("cart_id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("User_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("product_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("quantity")
                         .HasColumnType("int");
+
+                    b.Property<string>("user_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("cart_id");
 
@@ -48,7 +48,7 @@ namespace EDP.Migrations
                     b.Property<string>("claimed_voucher_id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("User_ID")
+                    b.Property<string>("user_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -138,10 +138,6 @@ namespace EDP.Migrations
                     b.Property<string>("purchase_history_id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("User_ID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<decimal>("discounted_price")
                         .HasColumnType("decimal(18,2)");
 
@@ -158,6 +154,10 @@ namespace EDP.Migrations
 
                     b.Property<decimal>("total_price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("user_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_name")
                         .IsRequired()

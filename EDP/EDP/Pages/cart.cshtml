@@ -1,0 +1,394 @@
+﻿@page
+@model EDP.Pages.cartModel
+@{
+
+}
+<div class="row" style="margin: 80px; margin-top:120px;">
+    <div class="container content-section col-12 col-md-9">
+        <div class="_1K9yK1">
+
+            <div class="_1glehh">
+                <table id="table" 
+                data-toggle="table" 
+                data-url="/cart/api/cart" 
+                data-pagination="true"
+                data-page-list="[5, 10, 25, 50, 100, all]" 
+                data-server-sorts="true" 
+                class="table borderless">
+
+                    {{!-- <div class="wijCjS _15TzDV">
+                        <div class="_17ffUV">
+                            <a class="_7HTERg"
+                                href="/12km.sg?categoryId=100012&amp;entryPoint=cart&amp;itemId=5564109070"><svg
+                                    width="17" height="16" viewBox="0 0 17 16" class="_330rTo">
+                                    <path
+                                        d="M1.95 6.6c.156.804.7 1.867 1.357 1.867.654 0 1.43 0 1.43-.933h.932s0 .933 1.155.933c1.176 0 1.15-.933 1.15-.933h.984s-.027.933 1.148.933c1.157 0 1.15-.933 1.15-.933h.94s0 .933 1.43.933c1.368 0 1.356-1.867 1.356-1.867H1.95zm11.49-4.666H3.493L2.248 5.667h12.437L13.44 1.934zM2.853 14.066h11.22l-.01-4.782c-.148.02-.295.042-.465.042-.7 0-1.436-.324-1.866-.86-.376.53-.88.86-1.622.86-.667 0-1.255-.417-1.64-.86-.39.443-.976.86-1.643.86-.74 0-1.246-.33-1.623-.86-.43.536-1.195.86-1.895.86-.152 0-.297-.02-.436-.05l-.018 4.79zM14.996 12.2v.933L14.984 15H1.94l-.002-1.867V8.84C1.355 8.306 1.003 7.456 1 6.6L2.87 1h11.193l1.866 5.6c0 .943-.225 1.876-.934 2.39v3.21z"
+                                        stroke-width=".3" stroke="#333" fill="#333" fill-rule="evenodd"></path>
+                                </svg><span style="margin-left: 10px;">Seller Name</span></a>
+                            <div class="_3txgB0"></div>
+                        </div>
+                    </div> --}}
+
+                    <thead class="carttHead">
+                        <tr>
+                            <th data-field="state" data-checkbox="true"></th>
+                            <th data-field="product.product_name" data-sortable="true" data-formatter="name">Product</th>
+                            <th data-field="product.selling_price" data-sortable="true" data-formatter="unit_price">Unit Price</th>
+                            <th data-field="quantity" data-formatter="format" data-events="operateEvents">Quantity</th>
+                            <th data-formatter="price">Total Price</th>
+                            <th data-field="product.product_id" data-formatter="del">action</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container content-section col-12 col-md-3">
+        <div class="_1glehh">
+            <div class="_1K9yK2">
+                <div class="_1glehh">
+                    <div class="iT6kEb">
+                        <div class="_2eVygu">
+                            <span style="color: #888; font-size:14px;">My Vouchers</span>
+                        </div>
+                        <div class="d-flex orderSum" style="padding-top: 10px;">
+                            <a type="button" data-toggle="modal" data-target="#modalVoucher" style="text-decoration: underline; color: #9BA2F6;">Select Voucher</a>
+                            {{!-- <button type="button" data-toggle="voucher_modal" data-target="#modalVoucher" style="text-decoration: underline; color: #9BA2F6;">Select Voucher</butt> --}}
+                        </div>
+                        <div class="d-flex orderSum" style="padding-top: 10px;" id="insertHere">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="_1glehh">
+            <div class="_1K9yK2">
+                <div class="_1glehh">
+                    <div class="iT6kEb">
+                        <div class="_2eVygu">
+                            <span style="color: #888; font-size:14px;">Order Summary</span>
+                        </div>
+                        <br>
+                        <div class="d-flex orderSum">
+                            <p>Total ( <label id="qty_items">0</label> items ):</p>
+                            <p class="ms-auto">$<span id="total_price">0</span></p>
+                        </div>
+                        <div class="d-flex orderSum">
+                            <p>Discount:</p>
+                            <p class="ms-auto" id="discount_price">0</p>
+                        </div>
+                        <div class="d-flex orderSum">
+                            <p>Saved:</p>
+                            <p class="ms-auto">$<span id="save_price">0</span></p>
+                        </div>
+                        <hr>
+                        <div class="d-flex orderSum">
+                            <p>Grand Total:</p>
+                            <p class="ms-auto">$<span id="final_price">0</span></p>
+                        </div>
+                        <div class="d-flex orderSum">
+                            <button id="button" type="button" class="checkOut" onclick="checkOut()"><i class="fa fa-rocket"></i> Check Out</button> {{!-- data-toggle="modal" data-target=".bd-example-modal-xl" --}}
+                        </div>
+                        <br>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalVoucher" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">My Vouchers</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color: #FA5C7C;"><i class="bi bi-x-square"></i></span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+    <table id="voucher_table" 
+        data-toggle="table" 
+        data-url="/cart/api/voucher" 
+        data-page-list="[5, 10, 25, 50, 100, all]" 
+        data-server-sorts="true" 
+        data-single-select="true"
+        data-click-to-select="true"
+        class="table borderless">
+        <thead>
+            <tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="loyalty_voucher.name">Name</th>
+                <th data-field="loyalty_voucher.min_spend" data-formatter="unit_price">Min Spend</th>
+                <th data-field="loyalty_voucher.discount_off" data-formatter="discount">Discount</th>
+            </tr>
+        </thead>
+    </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        {{!-- <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button> --}}
+        <button id="voucherSelect" type="button" class="checkOut" style="width: 28%;">Select</button> 
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+
+</div>
+
+<script>
+    function format(value, row, index) {
+        return '<div class="_2vZsK0"><div class="_3he7rw shopee-input-quantity"><button class="_3Ell0h minus" id="minus"><svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon"><polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon></svg></button><input class="_3Ell0h _37H5-t" id="quantity" disabled="disabled" type="text" role="spinbutton" aria-valuenow="1" min="1" value="' + value + '"><a class="_3Ell0h plus" id="plus"><svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0" class="shopee-svg-icon icon-plus-sign"> <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5"></polygon></svg></a></div></div>';
+    }
+    function del(value, row, index) {
+        return '<a class="deleteCart" href="/cart/delete/' + value + '" class="card-link" data-toggle="confirmation" data-title="Confirm delete?"><i class="bi bi-x-square"></i> Delete</a>'
+    }
+    function unit_price(value, row, index) {
+        return '$<label>' + value + '</label>'
+    }
+    function price(value, row, index) {
+        let qty = row.quantity
+        let price = row['product.selling_price']
+        let total = (price * qty).toFixed(2)
+        return '$<label id="price">' + total + '</label>'
+    }
+    function name(value, row, index) {
+        if(row['product.discountPromoDiscountPromoId'] != null){
+            return '<label><span style="background-color:#FA5C7C; justify-content: center; align-items: center;" class="badge">Promo</span> ' + value + ' </label>'
+        }else{
+            return '<label>' + value + '</label>'
+        }
+    }
+    function discount(value, row, index) {
+        if(row['loyalty_voucher.voucher_type'] == 'Amount Off'){
+            return '$<label>' + value + '</label>'
+        }else{
+            return '<label>' + value + '</label>%'
+        }
+    }
+    window.operateEvents = {
+        'click .minus': function (e, value, row, index) {
+            if (row.quantity >= 2){
+                $.post("/cart/minus/",{
+                    id:  row.productProductId
+                },function(data){
+                    $('#table').bootstrapTable('refresh')
+                });
+            }
+        },
+        'click .plus': function (e, value, row, index) {
+            $.post("/cart/plus/",{
+                id:  row.productProductId
+            },function(data){
+                $('#table').bootstrapTable('refresh')
+            });
+        }
+    }
+    let voucherRow = []
+    var checkedRows = [];
+    let total = 0
+    let qty = 0
+    let grant_total = 0
+    $(document).ready(function() {
+        {{!-- $('#button').click(function () {
+            console.log("clicked")
+        }) --}}
+        $('#table').on('uncheck.bs.table', function (e, row) {
+            for(var i=0; i < checkedRows.length; i++){
+                if(checkedRows[i]["productProductId"] === row["productProductId"]){
+                    checkedRows.splice(i, 1)
+                    total = total - row["product.selling_price"]
+                    qty = qty - row["quantity"]
+                    document.getElementById("total_price").innerHTML = total.toFixed(2);
+                    document.getElementById("qty_items").innerHTML = qty;
+                    document.getElementById("final_price").innerHTML = total.toFixed(2);
+                }
+            }
+            if(voucherRow.length > 0){
+                if(checkedRows.length > 0){
+                    if(voucherRow[0]['loyalty_voucher.voucher_type'] == "Amount Off"){
+                    grant_total = total - voucherRow[0]['loyalty_voucher.discount_off']
+                    document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                    document.getElementById("save_price").innerHTML = voucherRow[0]['loyalty_voucher.discount_off'];
+                    }else{
+                    rate = (voucherRow[0]['loyalty_voucher.discount_off'] / 100) * total
+                    grant_total = total - rate
+                    document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                    document.getElementById("save_price").innerHTML = rate.toFixed(2);
+                    }
+                }
+            }
+            if(checkedRows.length == 0){
+                document.getElementById("total_price").innerHTML = "0";
+                document.getElementById("final_price").innerHTML = "0";
+                document.getElementById("save_price").innerHTML = "0";
+                total = 0
+                qty = 0
+                grand_total = 0
+            }
+        });
+        $('#table').on('uncheck-all.bs.table', function (e, row) {
+            document.getElementById("total_price").innerHTML = "0";
+            document.getElementById("final_price").innerHTML = "0";
+            document.getElementById("save_price").innerHTML = "0";
+            total = 0;
+            qty = 0;
+            grand_total = 0;
+            checkedRows = [];
+        });
+        $('#table').on('check.bs.table', function (e, row) {
+            checkedRows.push(row);
+            let row_total;
+            if(checkedRows.length > 0){
+                    row_total = row['quantity'] * row["product.selling_price"]
+                    total += row_total
+                    qty = qty + row["quantity"]
+                    document.getElementById("total_price").innerHTML = total.toFixed(2);
+                    document.getElementById("qty_items").innerHTML = qty;
+                    document.getElementById("final_price").innerHTML = total.toFixed(2);
+                    if(voucherRow.length > 0){
+                        if(voucherRow[0]['loyalty_voucher.voucher_type'] == "Amount Off"){
+                            amt = voucherRow[0]['loyalty_voucher.discount_off']
+                            grant_total = total - voucherRow[0]['loyalty_voucher.discount_off']
+                            document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                            document.getElementById("save_price").innerHTML = amt.toFixed(2);
+                        }else{
+                            rate = (voucherRow[0]['loyalty_voucher.discount_off'] / 100) * total
+                            grant_total = total - rate
+                            document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                            document.getElementById("save_price").innerHTML = rate.toFixed(2);
+                        }
+                    }
+                
+            }
+            else{
+                total = 0
+                document.getElementById("total_price").innerHTML = "0";
+                document.getElementById("qty_items").innerHTML = "0";
+            }
+        });
+        $('#table').on('check-all.bs.table', function (e, row){
+            checkedRows = row;
+            let row_total;
+            if(checkedRows.length > 0){
+                
+                for(var i in checkedRows){
+                    console.log(checkedRows[i].quantity )
+                    row_total = checkedRows[i].quantity * checkedRows[i]["product.selling_price"]
+                    total += row_total
+                    qty = qty + checkedRows[i]["quantity"]
+                    document.getElementById("total_price").innerHTML = total.toFixed(2);
+                    document.getElementById("qty_items").innerHTML = qty;
+                    if(voucherRow.length > 0){
+                        if(voucherRow[0]['loyalty_voucher.voucher_type'] == "Amount Off"){
+                            amt = voucherRow[0]['loyalty_voucher.discount_off']
+                            grant_total = total - voucherRow[0]['loyalty_voucher.discount_off']
+                            document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                            document.getElementById("save_price").innerHTML = amt.toFixed(2);
+                        }else{
+                            rate = (voucherRow[0]['loyalty_voucher.discount_off'] / 100) * total
+                            grant_total = total - rate
+                            document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                            document.getElementById("save_price").innerHTML = rate.toFixed(2);
+                        }
+                    }
+                }
+            }
+            else{
+                total = 0
+                document.getElementById("total_price").innerHTML = "0";
+                document.getElementById("qty_items").innerHTML = "0";
+            }
+        });
+        $('#voucher_table').on('check.bs.table', function (e, row) {
+            voucherRow = []
+            voucherRow.push(row);
+            console.log(voucherRow[0]['loyalty_voucher.voucher_type'])
+        });
+        $('#voucherSelect').click(function () {
+            if(voucherRow.length > 0){
+                $('#rightHere').remove();
+                $('#voucherSelect').attr("data-dismiss", "modal")
+                $('#insertHere').append('<div id="rightHere" style="box-shadow: 0 10px 30px rgb(0 0 0 / 10%); width:90%; height:40px; padding: 10px 0;"><div class="d-flex orderSum"><span class="align-bottom" style="color:#FA5C7C;" id="voucherName">'+ voucherRow[0]['loyalty_voucher.name']+'</span><span class="ms-auto align-bottom"><button style="border: none; background-color:#fff; color:#6C757D;" id="cancelVouch"><i class="bi bi-x-square"></i></button></span></div></div>')
+                if(voucherRow[0]['loyalty_voucher.voucher_type'] == "Amount Off"){
+                    document.getElementById("discount_price").innerHTML = "$"+voucherRow[0]['loyalty_voucher.discount_off'];
+                }else{
+                    document.getElementById("discount_price").innerHTML = voucherRow[0]['loyalty_voucher.discount_off']+"%";
+                }
+                if(checkedRows.length > 0){
+                    if(voucherRow[0]['loyalty_voucher.voucher_type'] == "Amount Off"){
+                    grant_total = total - voucherRow[0]['loyalty_voucher.discount_off']
+                    document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                    document.getElementById("save_price").innerHTML = voucherRow[0]['loyalty_voucher.discount_off'];
+                }else{
+                    rate = (voucherRow[0]['loyalty_voucher.discount_off'] / 100) * total
+                    grant_total = total - rate
+                    document.getElementById("final_price").innerHTML = grant_total.toFixed(2);
+                    document.getElementById("save_price").innerHTML = rate.toFixed(2);
+                }
+                }
+                
+            }
+        });
+    });
+    $(document).on("click","#cancelVouch",function() {
+        console.log("cancel")
+        $('#rightHere').remove();
+        voucherRow = []
+        document.getElementById("discount_price").innerHTML = "0";
+        document.getElementById("save_price").innerHTML = "0";
+        if(checkedRows > 0){
+            document.getElementById("final_price").innerHTML = total.toFixed(2);
+        }
+        else{
+            document.getElementById("final_price").innerHTML = total;
+        }
+    });
+    async function checkOut(){
+        if(voucherRow.length == 0){
+            voucherRow.push("none")
+            voucherRow.push(total)
+        }else{
+            voucherRow.push(grant_total)
+        }
+        if(checkedRows.length > 0){
+            const checkedRows = $('#table').bootstrapTable('getSelections');
+            
+            try{
+                const res = await fetch("/cart/checkOut", {
+                    method: "post",
+                    body: JSON.stringify(checkedRows),
+                    headers: {
+                    "content-type": "application/json"
+                    }
+                },fetch("/cart/grand_total", {
+                    method: "post",
+                    body: JSON.stringify(voucherRow),
+                    headers: {
+                    "content-type": "application/json"
+                    }
+                })
+                
+                );
+                if (res.status == 200){
+                    location.href = "/cart/booking"
+                }
+            }
+            catch(e){
+                console.error("This shouldn't happen!")
+            }
+        }
+    }
+</script>
