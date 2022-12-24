@@ -23,31 +23,44 @@
             <input class="form-control" asp-for="myDonation.address" />
             <span asp-validation-for="myDonation.address" class="text-danger"></span>
         </div>
+    </div>
 
+    <div class="row mb-3">
         <label class="col-sm-2 col-form-label" asp-for="myDonation.unit_no">Unit Number</label>
         <div class="col-sm-10">
             <input class="form-control" asp-for="myDonation.unit_no" />
             <span asp-validation-for="myDonation.unit_no" class="text-danger"></span>
         </div>
+    </div>
 
+    <div class="row mb-3">
         <label class="col-sm-2 col-form-label" asp-for="myDonation.postal_code">Postal Code</label>
         <div class="col-sm-10">
             <input class="form-control" asp-for="myDonation.postal_code" />
             <span asp-validation-for="myDonation.postal_code" class="text-danger"></span>
         </div>
+    </div>
 
+    <div class="row mb-3">
         <label class="col-sm-2 col-form-label" asp-for="myDonation.collection_date"></label>
         <div class="col-sm-10">
-            <input class="form-control" asp-for="myDonation.collection_date" />
+            <script src="https://jsuites.net/v4/jsuites.js"></script>
+            <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+            <input class="form-control" id='calendar' asp-for="myDonation.collection_date" />
             <span asp-validation-for="myDonation.collection_date" class="text-danger"></span>
         </div>
+    </div>
 
+    <div class="row mb-3">
         <label class="col-sm-2 col-form-label" asp-for="myDonation.collection_time"></label>
         <div class="col-sm-10">
-            <input class="form-control" asp-for="myDonation.collection_time" />
+            @Html.DropDownListFor(m => m.myDonation.collection_time,
+            new SelectList(AddModel.DonationTimeList, "donation_time", "donation_time"), "-- Select --", new {@class = "form-select"})
             <span asp-validation-for="myDonation.collection_time" class="text-danger"></span>
         </div>
+    </div>
 
+    <div class="row mb-3">
         <label class="col-sm-2 col-form-label" asp-for="myDonation.type_of_waste"></label>
         <div class="col-sm-10">
             <input class="form-control" asp-for="myDonation.type_of_waste" />
@@ -70,10 +83,17 @@
         });
         document.findElementById("userdonationid").value = uuid;
     }
+
+    jSuites.calendar(document.getElementById('calendar'), {
+        format: 'DD/MM/YYYY',
+        time: false,
+        readonly: false,
+        validRange: ['2022-01-01', '2022-12-31']
+    });
 </script>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-    }
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
