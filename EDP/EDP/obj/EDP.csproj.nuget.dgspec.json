@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj": {}
+    "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj": {
+    "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj",
+        "projectUniqueName": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
         "projectName": "EDP",
-        "projectPath": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj",
-        "packagesPath": "C:\\Users\\aaral\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\obj\\",
+        "projectPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
+        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aaral\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,14 +10,14 @@ builder.Services.AddRazorPages();
 // https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs
 builder.Services.AddDbContext<MyDbContext>();
 
+builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<VoucherService>();
 builder.Services.AddScoped<ClaimVoucherService>();
 builder.Services.AddScoped<CartService>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ReviewService>();
-builder.Services.AddScoped<UserDonationService>();
-builder.Services.AddScoped<DonationDetailsService>();
+builder.Services.AddScoped<DonationServices>();
 
 var app = builder.Build();
 
