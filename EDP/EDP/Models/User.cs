@@ -18,7 +18,6 @@ namespace EDP.Models
         [Required, MinLength(8)]
         public string password { get; set; } = string.Empty;
 
-        [Required]
         [Display(Name = "Username")]
         public string name { get; set; } = string.Empty;
         // ========== End of Registration ==========

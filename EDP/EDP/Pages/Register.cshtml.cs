@@ -32,14 +32,15 @@ namespace EDP.Pages
                 if (user != null)
                 {
                     TempData["FlashMessage.Type"] = "danger";
-                    TempData["FlashMessage.Text"] = string.Format("Email already in used");
+                    TempData["FlashMessage.Text"] = string.Format("Email already in used!");
                     return Page();
                 }
 
+                MyUser.password = BCrypt.Net.BCrypt.HashPassword(MyUser.password);
                 MyUser.user_id= Guid.NewGuid().ToString();
                 _userService.AddUser(MyUser);
                 TempData["FlashMessage.Type"] = "success";
-                TempData["FlashMessage.Text"] = string.Format("Employee {0} is added", MyUser.name);
+                TempData["FlashMessage.Text"] = string.Format("Successfully Registered Account!");
 
                 return Redirect("/Login");
             }
