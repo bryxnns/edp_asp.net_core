@@ -15,27 +15,18 @@ namespace EDP.Pages
             _userService = userService;
         }
         public List<Voucher> VoucherList { get; set; }
-        public List<Voucher> ValidVoucherList { get; set; }
-      
+
+
         public void OnGet()
         {
-            var user_id = 12;
+            var user_id = "ANSBEFKJF12";
             
             VoucherList = _voucherService.GetAll();
-            if (user_id == null)
+            if(user_id!=null)
             {
-                ValidVoucherList = _voucherService.GetAll();
-            }
-            else
-            {
-                var CurrentUser = _userService.GetUserById(user_id.ToString());
-                foreach (var v in VoucherList)
-                {
-                    if(v.expiry_date > DateTime.Now && v.points_required >= Convert.ToInt16(CurrentUser.points))
-                    {
-                        ValidVoucherList.Add(v);
-                    }
-                }
+                //var CurrentUser = _userService.GetUserById(user_id);
+                var testPoints = 50;
+                VoucherList=_voucherService.GetAllClaimable(testPoints);
             }
             
             
