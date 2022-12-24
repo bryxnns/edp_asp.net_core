@@ -9,7 +9,7 @@ namespace EDP.Models
 		[Required]
 		public string product_id { get; set; }
 		[Required]
-		public string User_ID { get; set; }
+		public string user_id { get; set; }
 		[Required]
 		public int quantity { get; set; }
 	}

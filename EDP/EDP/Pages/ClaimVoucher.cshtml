@@ -1,0 +1,35 @@
+﻿@page
+@model EDP.Pages.ClaimVoucherModel
+@{
+    ViewData["Title"] = "Claim Vouchers";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+@{
+    @foreach (var item in Model.ValidVoucherList)
+    {
+        <div class="card" style="width:18rem;display: inline-block;">
+            <div class="card-body">
+                <h5 class="card-title">@item.voucher_name</h5>
+                <p class="card-text">
+                Expiry Date: @item.expiry_date.ToShortDateString()
+                <br>
+                Points Required: @item.points_required
+                </p>
+                <a href="#" class="btn-block btn btn-primary">Claim</a>
+            </div>
+        </div>
+    }
+}
+@*  <tr>
+    <td>@item.voucher_id</td>
+    <td>@item.voucher_name</td>
+    <td>@item.expiry_date.ToShortDateString()</td>
+    <td>@item.percentage_off</td>
+    <td>@item.points_required</td>
+    <td>
+    <a asp-page="/Vouchers/Update" asp-route-id="@item.voucher_id">Update</a>
+    <a asp-page="/Vouchers/Delete" asp-route-id="@item.voucher_id">Delete</a>
+    </td>
+    </tr>*@
+
