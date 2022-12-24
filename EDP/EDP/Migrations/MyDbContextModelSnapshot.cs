@@ -280,9 +280,8 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("points")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("points")
+                        .HasColumnType("int");
 
                     b.Property<string>("postal_Code")
                         .IsRequired()
@@ -298,7 +297,7 @@ namespace EDP.Migrations
 
                     b.HasKey("user_id");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("EDP.Models.Voucher", b =>

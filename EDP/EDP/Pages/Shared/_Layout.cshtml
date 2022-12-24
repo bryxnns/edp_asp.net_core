@@ -127,6 +127,8 @@
         </nav>
     </header>
         <div class="container">
+            @await Html.PartialAsync("_FlashMessage")
+
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>

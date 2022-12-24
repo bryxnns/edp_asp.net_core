@@ -33,7 +33,7 @@ namespace EDP.Services
 
         public User? GetUserDetails(string userid)
         {
-            User? user = _context.Users.FirstOrDefault(x => x.user_id.Equals(userid));
+            User? user = _context.User.FirstOrDefault(x => x.user_id.Equals(userid));
             return user;
         }
 
