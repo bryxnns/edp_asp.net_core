@@ -17,6 +17,16 @@ namespace EDP.Pages.Users.Donation
         [BindProperty]
         public Donations myDonation { get; set; } = new();
 
+        public static List<DonationTime> DonationTimeList { get; set; } = new()
+        {
+            new DonationTime { donation_time = "09.00 AM"},
+            new DonationTime{ donation_time = "11.00 AM" },
+            new DonationTime{ donation_time = "01.00 PM" },
+            new DonationTime{ donation_time = "03.00 PM" },
+            new DonationTime{ donation_time = "05.00 PM" },
+            new DonationTime{ donation_time = "07.00 PM" },
+        };
+
         public AddModel(DonationServices donationServices)
         {
             _donationServices = donationServices;
