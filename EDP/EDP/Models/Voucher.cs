@@ -25,5 +25,9 @@ namespace EDP.Models
 		[Display(Name = "Expiry Date")]
 		public DateTime expiry_date { get; set; }
 
+		[Required, Range(0, 100000000, ErrorMessage = "Enter a number more than 0.")]
+		[Display(Name = "Minimum Spend")]
+		public double min_spend { get; set; }
+
 	}
 }

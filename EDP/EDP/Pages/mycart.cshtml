@@ -9,21 +9,21 @@
 <div class="container">
     <div class="row">
         <div class="col-8">
-           <div class="row">
-               <div class="col">
-                   <p>Product Information</p>
-                   </div>
+            <div class="row">
+                <div class="col">
+                    <p>Product Information</p>
+                </div>
 
-                   <div class="col-4 col-lg-2">
-                       <p style="text-align:left;">Quantity</p>
-                   </div>
+                <div class="col-4 col-lg-2">
+                    <p style="text-align:left;">Quantity</p>
+                </div>
 
-                   <div class="col col-lg-2">
-                       <p>Actions</p>
-                   </div>
-               </div>
-               <hr />
-@*               <form class="mt-3" method="post" enctype="multipart/form-data">*@
+                <div class="col col-lg-2">
+                    <p>Actions</p>
+                </div>
+            </div>
+            <hr />
+            @*               <form class="mt-3" method="post" enctype="multipart/form-data">*@
             @if (Model.UserCartItems != null)
             {
 
@@ -51,8 +51,8 @@
 
                                     <input id="@item.cart_id" min="1" name="quantity" value="1" type="number"
                            class="form-control" width="10" />
-                    
-    
+
+
 
                                 </div>
                                 <div class="col col-lg-2">
@@ -61,7 +61,7 @@
                                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
                                         </svg>
                                     </a>
-                                    <a asp-page="#" asp-route-productid="@prod.product_id" class="btn btn-outline-danger">
+                                    <a asp-page="/CartActions/DeleteCartItem" asp-route-cartid="@item.cart_id" class="btn btn-outline-danger">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
@@ -105,8 +105,8 @@
                 </div>
 
                 </div>*@
-                @*  <input type="submit" id="submitBtn" value="Update Quantity" class="btn btn-primary" />
-           </form>*@
+            @*  <input type="submit" id="submitBtn" value="Update Quantity" class="btn btn-primary" />
+                </form>*@
         </div>
 
         <div class="col-4">
@@ -117,7 +117,7 @@
                     Subtotal
                 </div>
                 <div class="col">
-                    <p style="text-align:right;"> $15.00</p>
+                    <p style="text-align:right;"> $@Model.subTotal.ToString("0.00")</p>
                 </div>
             </div>
             <div class="row">
@@ -125,7 +125,7 @@
                     Shipping Fee
                 </div>
                 <div class="col">
-                    <p style="text-align:right;">$1.00</p>
+                    <p style="text-align:right;">$@Model.shippingFee.ToString("0.00")</p>
                 </div>
             </div>
             <div class="row">
@@ -133,51 +133,94 @@
                     Shipping Guarantee
                 </div>
                 <div class="col">
-                    <p style="text-align:right;">$1.37</p>
+                    <p style="text-align:right;">$@Model.shippingGuarantee.ToString("0.00")</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    Discount
+            @if (Model.selectedVoucher != null)
+            {
+                <div class="row">
+                    <div class="col">
+                        Discount
+                    </div>
+                    <div class="col">
+                        <p style="text-align:right;">-$@Model.Discount.ToString("0.00")</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <p style="text-align:right;">-$1.00</p>
-                </div>
-            </div>
+            }
             <div class="row">
                 <div class="col">
                     <p style="font-weight:bold">Grand Total</p>
                 </div>
-                <div class="col">
-                    <p style="font-weight:bold;text-align:right"> $15.00</p>
-                </div>
+                @{
+                    if (Model.selectedVoucher == null)
+                    {
+                        <div class="col">
+                            <p style="font-weight:bold;text-align:right"> $@Model.totalPrice.ToString("0.00")</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col">
+                            <p style="font-weight:bold;text-align:right"> $@Model.discountedPrice.ToString("0.00")</p>
+                        </div>
+                    }
+                }
             </div>
+
             <hr />
             @*if haven't selected*@
-            <button type="button" class="btn-block btn btn-primary">Select Voucher</button>
-            @*if selected*@
-            <p style="font-weight:bold;font-size:15px;">Selected Voucher:</p>
-            <p style="font-weight:bold">10% off</p>
-            Min Spend: $0.00
-            <p>Expiry Date: 06-01-2023</p>
-            <button type="button" class="btn-block btn btn-primary">Change Voucher</button>
-            <button type="button" class="btn-block btn btn-danger">Remove Voucher</button>
+            @{
+                if (Model.selectedVoucher == null)
+                {
+                    <a asp-page="/ClaimedVouchers/Claimable" asp-route-minSpend="@Model.totalPrice" type="button" class="btn-block btn btn-primary">Select Voucher</a>
+
+                }
+                @*if selected*@
+                else
+                {
+                    <p style="font-weight:bold;font-size:15px;">Selected Voucher:</p>
+                    <p style="font-weight:bold">@Model.selectedVoucher.percentage_off% off</p>
+                    <p>Min Spend: $@Model.selectedVoucher.min_spend.ToString("0.00")</p>
+                    <p>Expiry Date: @Model.selectedVoucher.expiry_date.ToShortDateString()</p>
+                    <a asp-page="/ClaimedVouchers/Claimable" asp-route-minSpend="@Model.totalPrice" type="button" class="btn-block btn btn-primary">Change Voucher</a>
+                    <a asp-page="/mycart" type="button" class="btn-block btn btn-danger">Remove Voucher</a>
+                }
+
+            }
+
             @*  checkout*@
+            <br />
             <button type="button" class="btn-block btn btn-success">Checkout</button>
+
         </div>
+
     </div>
 </div>
 
 
 <script>
-$(".RefreshQuantity").click(function () {
-    // Get the id from the link 
-    var recordToUpdate = $(this).attr("data-id");
-    var quantity = $("#"+recordToUpdate).val();
-    console.log(recordToUpdate);
-    console.log(quantity);
-    if (recordToUpdate != '') {        
-        // Perform the ajax post 
-        $.post("/CartActions/UpdateQuantity", { "itemId": recordToUpdate, "quantity": quantity });
-    }});
+    $(".RefreshQuantity").click(function () {
+        // Get the id from the link
+        var recordToUpdate = $(this).attr("data-id");
+        var quantity = $("#"+recordToUpdate).val();
+        console.log(recordToUpdate);
+        console.log(quantity);
+        if (recordToUpdate != '') {
+            // Perform the ajax post
+            //$.post("/CartActions/UpdateQuantity", { itemId: recordToUpdate, quantity: quantity });
+
+         $.ajax({
+             type: "POST",
+        url: "/CartActions/UpdateQuantity",
+        data: { itemId: recordToUpdate, quantity: quantity },
+        success: function (response) {
+            alert(response.status);
+        },
+        error: function () {
+            alert("error");
+        }
+    });
+        }});
+
+
 </script>

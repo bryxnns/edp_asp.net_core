@@ -15,6 +15,16 @@ namespace EDP.Pages
         public List<Products> UserProds { get; set; } = new();
         public List<Cart> UserCartItems { get; set; } = new();
 
+        public List<Voucher> UserVouchers { get; set; } = new();
+
+        public double totalPrice { get; set; }
+        public double subTotal = 0.00;
+        public double discountedPrice { get; set; }
+        public double shippingFee = 1.00;
+        public double shippingGuarantee = 1.37;
+        public Voucher selectedVoucher { get; set; }
+        public double Discount { get; set; }
+
         public mycartModel(VoucherService voucherService,ClaimVoucherService claimVoucherService, CartService cartService, ProductService productService)
         {
             _voucherService = voucherService;
@@ -23,7 +33,7 @@ namespace EDP.Pages
             _cartService = cartService;
              
         }
-        public void OnGet()
+        public void OnGet(string? voucherid)
         {
 
             //Adding product to cart test
@@ -36,23 +46,38 @@ namespace EDP.Pages
             //_cartService.AddtoCart(MyCart);
 
 
+
             UserCartItems = _cartService.GetAllCartItems(userid);
-            UserProds=_cartService.GetAllProductsInCart(userid);
-
-        }
-
-        public async Task<IActionResult> OnPostAsync()
-        {
-            if (ModelState.IsValid)
+            UserProds = _cartService.GetAllProductsInCart(userid);
+            UserVouchers = _claimVoucherService.GetAllUserVouchers(userid);
+            foreach (var item in UserCartItems)
             {
-                foreach(var item in UserCartItems)
+                foreach (var product in UserProds)
                 {
-                    _cartService.UpdateCartItem(item);
+                    if (item.product_id == product.product_id)
+                    {
+                        var price = product.price * item.quantity;
+                        subTotal += decimal.ToDouble(price);
+                    }
                 }
-
             }
-            return Redirect("/mycart");
+            totalPrice = subTotal + shippingFee + shippingGuarantee;
+
+            if (voucherid != null)
+            {
+                selectedVoucher = _voucherService.GetVoucherById(voucherid);
+                if(selectedVoucher != null)
+                {
+                    Discount = totalPrice * (Convert.ToDouble((selectedVoucher.percentage_off)) / 100);
+                    discountedPrice = totalPrice - Discount;
+                }
+               
+            }
+
+
         }
+
+       
 
 
         }
