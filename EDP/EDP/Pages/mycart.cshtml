@@ -44,12 +44,13 @@
                          onerror="this.src='/images/user.png'" />
                                     <input class="form-control d-none" asp-for="@prod.product_image" />
                                     <h6 class="text-black mb-0 " style="padding-left:20px;">@prod.product_name</h6>
+       
                                     <h6 class="text-muted">Expiry date: @prod.expiry_date</h6>
                                     <h6 class="text-muted">Price for one: $@prod.price.ToString("0.00")</h6>
                                 </div>
                                 <div class="col-4 col-lg-2">
 
-                                    <input id="@item.cart_id" min="1" name="quantity" value="1" type="number"
+                                    <input id="@item.cart_id" min="1" name="quantity" value="@item.quantity" type="number"
                            class="form-control" width="10" />
 
 
