@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2PJbgr2/0ihmfW3RpgdjZMl69SVw3pmWMfP5EE5K4f0SJcRYE6MBbBwMkuT+F/P0SG+kYaSEPjDSmBVBXfI20A==",
+  "dgSpecHash": "MJeZVA9ZnK9rBpkVUvv2KOR/LvbZ5c+C+Omw/Av2JIR53AAVwepvEGKOTcqyfLQrYdLVcGOrkgV5AafQIEpXfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bryan\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\bryan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bryan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\bryan\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

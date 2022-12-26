@@ -14,6 +14,20 @@ namespace EDP.Services
         {
             return _context.Vouchers.OrderBy(d => d.voucher_name).ToList();
         }
+        public List<Voucher> GetAllClaimable(int points)
+        {
+            var allVouchers= _context.Vouchers.OrderBy(d => d.voucher_name).ToList();
+            List<Voucher> Claimable = new List<Voucher>();
+            foreach(var voucher in allVouchers)
+            {
+                if (voucher.points_required <= points)
+                {
+                    Claimable.Add(voucher);
+                }
+            }
+            return Claimable;
+        }
+
         public Voucher? GetVoucherById(string id)
         {
             Voucher? voucher = _context.Vouchers.FirstOrDefault(

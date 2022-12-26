@@ -12,13 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-<<<<<<<< HEAD:EDP/EDP/Migrations/20221223080102_Create.Designer.cs
-    [Migration("20221223080102_Create")]
-    partial class Create
-========
-    [Migration("20221222092949_Create1")]
-    partial class Create1
->>>>>>>> feb84d7133d15cc85fbba6d57ec3315f1193594b:EDP/EDP/Migrations/20221222092949_Create1.Designer.cs
+    [Migration("20221224055408_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -287,9 +282,8 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("points")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("points")
+                        .HasColumnType("int");
 
                     b.Property<string>("postal_Code")
                         .IsRequired()
@@ -305,7 +299,7 @@ namespace EDP.Migrations
 
                     b.HasKey("user_id");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("EDP.Models.Voucher", b =>

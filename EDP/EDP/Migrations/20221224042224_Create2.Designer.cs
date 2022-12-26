@@ -4,6 +4,7 @@ using EDP;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221224042224_Create2")]
+    partial class Create2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,25 +66,10 @@ namespace EDP.Migrations
                     b.ToTable("ClaimedVouchers");
                 });
 
-            modelBuilder.Entity("EDP.Models.Donations", b =>
+            modelBuilder.Entity("EDP.Models.Donation_Details", b =>
                 {
-                    b.Property<string>("user_donation_id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("collection_date")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("collection_done")
                         .HasColumnType("bit");
-
-                    b.Property<string>("collection_time")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("drop_off_done")
                         .HasColumnType("bit");
@@ -91,31 +78,7 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("postal_code")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("request")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("type_of_waste")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("unit_no")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("user_id")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("volunteer_user_id")
+                    b.Property<string>("user_donation_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -127,9 +90,7 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("user_donation_id");
-
-                    b.ToTable("Donations");
+                    b.ToTable("DonationDetails");
                 });
 
             modelBuilder.Entity("EDP.Models.Products", b =>
@@ -296,7 +257,44 @@ namespace EDP.Migrations
 
                     b.HasKey("user_id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("EDP.Models.User_Donation", b =>
+                {
+                    b.Property<string>("user_donation_id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("collection_date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("collection_time")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("postal_code")
+                        .HasColumnType("int");
+
+                    b.Property<string>("type_of_waste")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("unit_no")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("user_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("user_donation_id");
+
+                    b.ToTable("UserDonations");
                 });
 
             modelBuilder.Entity("EDP.Models.Voucher", b =>

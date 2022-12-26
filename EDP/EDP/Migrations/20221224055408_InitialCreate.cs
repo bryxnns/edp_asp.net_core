@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EDP.Migrations
 {
-    public partial class Create1 : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -38,18 +38,29 @@ namespace EDP.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "DonationDetails",
+                name: "Donations",
                 columns: table => new
                 {
+                    user_donation_id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    unit_no = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    postal_code = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    collection_date = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    collection_time = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    type_of_waste = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    request = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    user_id = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     waste_weight = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     waste_image = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     collection_done = table.Column<bool>(type: "bit", nullable: false),
                     drop_off_done = table.Column<bool>(type: "bit", nullable: false),
                     drop_off_point = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    user_donation_id = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    volunteer_user_id = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
+                    table.PrimaryKey("PK_Donations", x => x.user_donation_id);
                 });
 
             migrationBuilder.CreateTable(
@@ -119,25 +130,7 @@ namespace EDP.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "UserDonations",
-                columns: table => new
-                {
-                    user_donation_id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    unit_no = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    postal_code = table.Column<int>(type: "int", nullable: false),
-                    collection_date = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    collection_time = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    type_of_waste = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    user_id = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserDonations", x => x.user_donation_id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Users",
+                name: "User",
                 columns: table => new
                 {
                     user_id = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -149,11 +142,11 @@ namespace EDP.Migrations
                     postal_Code = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     phone_No = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     roles = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    points = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    points = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.user_id);
+                    table.PrimaryKey("PK_User", x => x.user_id);
                 });
 
             migrationBuilder.CreateTable(
@@ -181,7 +174,7 @@ namespace EDP.Migrations
                 name: "ClaimedVouchers");
 
             migrationBuilder.DropTable(
-                name: "DonationDetails");
+                name: "Donations");
 
             migrationBuilder.DropTable(
                 name: "Products");
@@ -196,10 +189,7 @@ namespace EDP.Migrations
                 name: "Reviews");
 
             migrationBuilder.DropTable(
-                name: "UserDonations");
-
-            migrationBuilder.DropTable(
-                name: "Users");
+                name: "User");
 
             migrationBuilder.DropTable(
                 name: "Vouchers");

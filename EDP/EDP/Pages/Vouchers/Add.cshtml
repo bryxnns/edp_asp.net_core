@@ -43,6 +43,14 @@
                     @*  asp-validation-for is used to show the validation we coded in the cs also*@
         </div>
        </div>
+
+       <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="MyVoucher.min_spend"></label>
+        <div class="col-sm-10">
+            <input class="form-control"type="number" asp-for="MyVoucher.min_spend" />
+            <span asp-validation-for="MyVoucher.min_spend" class="text-danger" ></span>
+        </div>
+    </div>
        </div>
 </div>
 
