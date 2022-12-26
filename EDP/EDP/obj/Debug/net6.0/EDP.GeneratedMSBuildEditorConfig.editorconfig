@@ -19,8 +19,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/ClaimVoucher.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhaW1Wb3VjaGVyLmNzaHRtbA==
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/CartActions/DeleteCartItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydEFjdGlvbnNcRGVsZXRlQ2FydEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/CartActions/UpdateQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydEFjdGlvbnNcVXBkYXRlUXVhbnRpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/ClaimedVouchers/AddClaim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhaW1lZFZvdWNoZXJzXEFkZENsYWltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/ClaimedVouchers/Claimable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhaW1lZFZvdWNoZXJzXENsYWltYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/ClaimedVouchers/ClaimedVoucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhaW1lZFZvdWNoZXJzXENsYWltZWRWb3VjaGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/ClaimedVouchers/ClaimVoucher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhaW1lZFZvdWNoZXJzXENsYWltVm91Y2hlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Error.cshtml]
@@ -59,8 +79,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Product/Review/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxSZXZpZXdcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Shared/_FlashMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9GbGFzaE1lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/OneDrive/Documents/y2s2/enterprise dev proj/source/repos/Assigment/EDP/EDP/Pages/Shared/_ValidationScriptsPartial.cshtml]

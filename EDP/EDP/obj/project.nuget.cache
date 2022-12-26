@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C0XnZr7Cc1KoZfZNvb3V/UVqHP1ijqGO4KpzAx8w//bgINBgSOyx0UlkDT5l8b+FOjvHxZvntFPSm1sBoYbvoA==",
+  "dgSpecHash": "S8R9d8AyhMasP+jfKoulb2uDoyY78jNWkHku4jikuo+r9QDoMkNh8qZA9kPAh+ymO7Zh4bckP/AZx622QQoehQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\EDP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -48,5 +49,12 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

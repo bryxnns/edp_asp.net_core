@@ -2,40 +2,50 @@ using EDP.Models;
 using EDP.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Diagnostics;
 
 namespace EDP.Pages
 {
     public class RegisterModel : PageModel
     {
-
         private readonly UserService _userService;
 
-        public string userID = Guid.NewGuid().ToString();
 
-        public RegisterModel(  user_service)
+		public RegisterModel(UserService userService)
         {
-			_userService = user_service;
+            _userService = userService;
         }
 
         [BindProperty]
-        public Models.User MyUser { get; set; } = new();
+        public User MyUser { get; set; } = new();
 
         public void OnGet()
         {
+
         }
 
-		public IActionResult OnPost()
+        public IActionResult OnPost()
         {
             if (ModelState.IsValid)
             {
-				MyUser.user_id = userID;
-				_userService.AddUser(MyUser);
-				Debug.WriteLine("user registered successfully");
-			}
+                User? user = _userService.GetUserByEmail(MyUser.email);
 
-			return Page();
+                if (user != null)
+                {
+                    TempData["FlashMessage.Type"] = "danger";
+                    TempData["FlashMessage.Text"] = string.Format("Email already in used!");
+                    return Page();
+                }
+
+                MyUser.password = BCrypt.Net.BCrypt.HashPassword(MyUser.password);
+                MyUser.user_id= Guid.NewGuid().ToString();
+                _userService.AddUser(MyUser);
+                TempData["FlashMessage.Type"] = "success";
+                TempData["FlashMessage.Text"] = string.Format("Successfully Registered Account!");
+
+                return Redirect("/Login");
+            }
+            return Page();
         }
 
-	}
+    }
 }

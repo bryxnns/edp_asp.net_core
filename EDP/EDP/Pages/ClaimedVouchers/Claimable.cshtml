@@ -1,0 +1,28 @@
+﻿@page
+@model EDP.Pages.ClaimedVouchers.ClaimableModel
+@{
+        ViewData["Title"] = "Claimed Vouchers";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+@if(Model.VoucherList!=null)
+{
+    @foreach (var item in Model.VoucherList)
+    {
+        <div class="card" style="width:18rem;display: inline-block;">
+            <div class="card-body">
+                <h5 class="card-title">@item.voucher_name</h5>
+                <p class="card-text">
+                Expiry Date: @item.expiry_date.ToShortDateString()
+                <br>
+              Min Spend: $@item.min_spend.ToString("0.00")
+             <a asp-page="/mycart" asp-route-voucherid="@item.voucher_id" class="btn-block btn btn-primary">Select</a>
+                </p>
+            </div>
+        </div>
+    }
+}
+else
+{
+        <p>Currently no claimed vouchers</p>
+}
