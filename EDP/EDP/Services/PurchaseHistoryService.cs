@@ -20,10 +20,10 @@ namespace EDP.Services
 
         public List<Purchase_History> GetAll()
         {
-            return _context.PurchaseHistories.OrderBy(d => d.user_id).ToList();
+            return _context.PurchaseHistories.OrderByDescending(d => d.purchase_date).ToList();
         }
 
-        public List<Purchase_History> GetALlItemsFromUser(string userid)
+        public List<Purchase_History> GetAllUserPH(string userid)
         {
             return _context.PurchaseHistories.Where(d => d.user_id == userid).ToList();
         }

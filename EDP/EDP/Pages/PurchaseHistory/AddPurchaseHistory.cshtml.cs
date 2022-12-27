@@ -38,7 +38,7 @@ namespace EDP.Pages.PurchaseHistory
 
         public Purchase_History PurchaseHistory { get; set; } = new();
 
-        public void OnGet(string? voucherid,string paymentReferenceCode)
+        public async Task<IActionResult> OnGet(string? voucherid,string paymentReferenceCode)
         {
             //testing until session is made & payment is done
             var userid = "ANSBEFKJF12";
@@ -110,8 +110,10 @@ namespace EDP.Pages.PurchaseHistory
                 }
             }
 
-
+            return Redirect("/PurchaseHistory/UserPurchaseHistories");
 
         }
+
+        
     }
 }

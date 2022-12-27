@@ -24,7 +24,7 @@ namespace EDP.Services
             return _context.PurchasedItems.OrderBy(d => d.purchase_history_id).ToList();
         }
 
-        public List<Purchased_Item> GetALlItemsFromUser(string purchasehistoryid)
+        public List<Purchased_Item> GetALlItemsFromPHId(string purchasehistoryid)
         {
             return _context.PurchasedItems.Where(d => d.purchase_history_id == purchasehistoryid).ToList();
         }
