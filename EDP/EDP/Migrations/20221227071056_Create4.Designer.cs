@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20221224055408_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20221227071056_Create4")]
+    partial class Create4
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -55,7 +55,6 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_code")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_id")
@@ -188,9 +187,8 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("percentage_off")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("percentage_off")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("purchase_date")
                         .HasColumnType("datetime2");
@@ -203,7 +201,6 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("purchase_history_id");
@@ -309,6 +306,9 @@ namespace EDP.Migrations
 
                     b.Property<DateTime>("expiry_date")
                         .HasColumnType("datetime2");
+
+                    b.Property<double>("min_spend")
+                        .HasColumnType("float");
 
                     b.Property<string>("percentage_off")
                         .IsRequired()
