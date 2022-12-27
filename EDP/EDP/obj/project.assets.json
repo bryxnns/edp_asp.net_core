@@ -2049,19 +2049,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bryan\\.nuget\\packages\\": {}
+    "C:\\Users\\koika\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
+      "projectUniqueName": "C:\\Users\\koika\\Source\\Repos\\edp_asp.net_core\\EDP\\EDP\\EDP.csproj",
       "projectName": "EDP",
-      "projectPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
-      "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\obj\\",
+      "projectPath": "C:\\Users\\koika\\Source\\Repos\\edp_asp.net_core\\EDP\\EDP\\EDP.csproj",
+      "packagesPath": "C:\\Users\\koika\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\koika\\Source\\Repos\\edp_asp.net_core\\EDP\\EDP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\koika\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
