@@ -1,6 +1,7 @@
 using EDP.Models;
 using EDP.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EDP.Pages
@@ -35,7 +36,8 @@ namespace EDP.Pages
 
 					if(valid != null)
 					{
-						return Redirect("/Index");
+						HttpContext.Session.SetString("user_id", valid.user_id);
+						return Redirect("/Users/Profile");
 					}
 					else
 					{

@@ -46,8 +46,11 @@ namespace EDP.Services
 
             bool isValidPassword = BCrypt.Net.BCrypt.Verify(user.password, username.password);
 
+            user.user_id = username.user_id;
+
             if(isValidPassword)
             {
+                
                 return user;
             }
             return null;
