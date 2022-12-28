@@ -33,6 +33,7 @@
                     <td>@item.price</td>
                     <td>@item.expiry_date</td>
                     <td>
+                        <span asp-validation-for="Upload" class="text-danger"></span>
                         <img id="imgPreview" style="height:100px;width:100px;object-fit:cover"
                          src="@(string.IsNullOrEmpty(item.product_image) ? "/images/user.png" : item.product_image)"
                             onerror="this.src='/images/user.png'" />

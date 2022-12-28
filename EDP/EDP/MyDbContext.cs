@@ -15,21 +15,22 @@ namespace EDP
 			string connectionString = _configuration.GetConnectionString("MyConnection");
 			optionsBuilder.UseSqlServer(connectionString);
 		}
-
-
-		public DbSet<User> User { get; set; }
 		public DbSet<Cart> Carts { get; set; }
-		public DbSet<Reviews> Reviews { get; set; }
-		public DbSet<Voucher> Vouchers { get; set; }
-		public DbSet<Products> Products { get; set; }        
-		public DbSet<Donations> Donations { get; set; }
-		public DbSet<Purchased_Item> PurchasedItems { get; set; }
+
 		public DbSet<Claimed_Voucher> ClaimedVouchers { get; set; }
+
+		public DbSet<Voucher> Vouchers { get; set; }
+
 		public DbSet<Purchase_History> PurchaseHistories { get; set; }
-        
+        public DbSet<Reviews> Reviews { get; set; }
 
-        
+        public DbSet<User> Users { get; set; }
+		public DbSet<Purchased_Item> PurchasedItems { get; set; }
 
-        
-    }
+		public DbSet<User_Donation> UserDonations { get; set; }
+
+		public DbSet<Donation_Details> DonationDetails { get; set; }
+
+		public DbSet<Products> Products { get; set; }	
+	}
 }

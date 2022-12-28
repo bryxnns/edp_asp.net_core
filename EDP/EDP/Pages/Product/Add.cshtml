@@ -56,10 +56,8 @@
     <div class="row mb-3">
         <label class="col-sm-2 col-form-label" asp-for="myProduct.expiry_date"></label>
         <div class="col-sm-10">
-            <script src="https://jsuites.net/v4/jsuites.js"></script>
-            <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
-            <input class="form-control" id='calendar' asp-for="myProduct.expiry_date" />
-            <span asp-validation-for="myProduct.expiry_date" class="text-danger"></span><br />
+            <input class="form-control" asp-for="myProduct.expiry_date" />
+            <span asp-validation-for="myProduct.expiry_date" class="text-danger"></span>
         </div>
     </div>
 
@@ -94,13 +92,6 @@
             uploadimg.readAsDataURL(input.files[0]);
         }
     }
-
-    jSuites.calendar(document.getElementById('calendar'), {
-        format: 'DD/MM/YYYY',
-        time: false,
-        readonly: false,
-        validRange: ['2022-01-01', '2022-12-31']
-    });
 </script>
 
 @section Scripts {

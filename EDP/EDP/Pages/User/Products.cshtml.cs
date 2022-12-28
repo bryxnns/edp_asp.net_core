@@ -3,14 +3,15 @@ using EDP.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace EDP.Pages.Users.Product
+namespace EDP.Pages.User
 {
-    public class IndexModel : PageModel
+    public class ProductsModel : PageModel
     {
         private readonly ProductService _productService;
+
         public List<Products> AllProductsList { get; set; } = new();
 
-        public IndexModel(ProductService productService)
+        public ProductsModel(ProductService productService)
         {
             _productService = productService;
         }

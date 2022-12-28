@@ -7,9 +7,6 @@ namespace EDP.Pages
     {
         public void OnGet()
         {
-            //Test
-            var userid = "ANSBEFKJF12";
-            HttpContext.Session.SetString("userid", userid);
         }
     }
 }
