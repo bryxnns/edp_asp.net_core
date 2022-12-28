@@ -1,6 +1,7 @@
 ﻿@page
 @model EDP.Pages.Users.Product.DetailsModel
 @{
+    ViewData["SubTitle"] = "Reviews";
 }
 
 <section class="py-5">
@@ -20,8 +21,36 @@
                 <p class="lead">
                     @Model.myProduct.description
                 </p>
-                <a asp-page="#" asp-route-id="@Model.myProduct.user_id"><button>Add to Cart</button></a>
+                <a asp-page="#" asp-route-id="@Model.myProduct.user_id"><button>Add to Cart</button></a><br />
+                <a asp-page="/Users/Product/Review/Add" asp-route-productid="@Model.myProduct.product_id" asp-route-userid="@Model.myProduct.user_id">Add Review</a>
             </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 align-item-center">
+            <h3 class="display-4">@ViewData["SubTitle"]</h3>
+            <table class="table mt-3">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.ReviewsList[0].review)</th>
+                        <th>@Html.DisplayNameFor(model => model.ReviewsList[0].review_image)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        @foreach (var item in Model.ReviewsList)
+                        {
+                            <tr>
+                                <td>@item.review</td>
+                                <td>
+                                    <img id="imgPreview" style="height:100px;width:100px;object-fit:cover"
+                                     src="@(string.IsNullOrEmpty(item.review_image) ? "/images/user.png" : item.review_image)"
+                                     onerror="this.src='/images/user.png'" />
+                                    <input class="form-control d-none" asp-for="@item.review_image" />
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
         </div>
     </div>
 </section>

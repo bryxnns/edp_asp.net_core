@@ -245,6 +245,10 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("review_image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("user_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

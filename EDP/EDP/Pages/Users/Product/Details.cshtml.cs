@@ -8,13 +8,17 @@ namespace EDP.Pages.Users.Product
     public class DetailsModel : PageModel
     {
         private readonly ProductService _productService;
+        private readonly ReviewService _reviewService;
+
+        public List<Reviews> ReviewsList { get; set; } = new();
 
         [BindProperty]
         public Products myProduct { get; set; } = new();
 
-        public DetailsModel(ProductService productService)
+        public DetailsModel(ProductService productService, ReviewService reviewService)
         {
             _productService = productService;
+            _reviewService = reviewService;
         }
 
         public IActionResult OnGet(string id)
@@ -23,6 +27,7 @@ namespace EDP.Pages.Users.Product
             if (product != null)
             {
                 myProduct = product;
+                ReviewsList = _reviewService.GetReviewByProductId(id);
                 return Page();
             }
             else

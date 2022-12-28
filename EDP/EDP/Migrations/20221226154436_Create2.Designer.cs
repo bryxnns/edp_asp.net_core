@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20221224055408_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20221226154436_Create2")]
+    partial class Create2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -55,7 +55,6 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_code")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_id")
@@ -248,6 +247,10 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("review_image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("user_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -309,6 +312,9 @@ namespace EDP.Migrations
 
                     b.Property<DateTime>("expiry_date")
                         .HasColumnType("datetime2");
+
+                    b.Property<double>("min_spend")
+                        .HasColumnType("float");
 
                     b.Property<string>("percentage_off")
                         .IsRequired()
