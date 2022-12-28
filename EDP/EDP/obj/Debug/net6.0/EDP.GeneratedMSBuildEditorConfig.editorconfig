@@ -60,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbXljYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bryan/Desktop/edp_asp.net/EDP/EDP/Pages/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bryan/Desktop/edp_asp.net/EDP/EDP/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +82,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bryan/Desktop/edp_asp.net/EDP/EDP/Pages/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bryan/Desktop/edp_asp.net/EDP/EDP/Pages/PurchaseHistory/AddPurchaseHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVyY2hhc2VIaXN0b3J5XEFkZFB1cmNoYXNlSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bryan/Desktop/edp_asp.net/EDP/EDP/Pages/PurchaseHistory/UserPurchaseHistories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVyY2hhc2VIaXN0b3J5XFVzZXJQdXJjaGFzZUhpc3Rvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bryan/Desktop/edp_asp.net/EDP/EDP/Pages/Register.cshtml]
