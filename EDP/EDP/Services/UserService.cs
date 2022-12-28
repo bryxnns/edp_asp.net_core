@@ -39,5 +39,22 @@ namespace EDP.Services
             _context.User.Update(user);
             _context.SaveChanges();
         }
+
+        public User? Login(User user)
+        {
+            var username = _context.User.FirstOrDefault(m => m.email.Equals(user.email));
+
+            bool isValidPassword = BCrypt.Net.BCrypt.Verify(user.password, username.password);
+
+            user.user_id = username.name;
+            user.user_id = username.user_id;
+
+            if(isValidPassword)
+            {
+                
+                return user;
+            }
+            return null;
+        }
     }
 }
