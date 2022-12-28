@@ -1,0 +1,46 @@
+﻿@page
+@model EDP.Pages.Users.Donation.IndexModel
+@{
+    ViewData["Title"] = "Donations";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            @*<th>@Html.DisplayNameFor(model => model.UserDonationList[0].user_donation_id)</th>*@
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].address)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].unit_no)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].postal_code)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].collection_date)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].collection_time)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].type_of_waste)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].request)</th>
+            <th>@Html.DisplayNameFor(model => model.DonationList[0].status)</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            @foreach (var item in Model.DonationList)
+            {
+                <tr>
+                    @*<td>@item.user_donation_id</td>*@
+                    <td>@item.address</td>
+                    <td>@item.unit_no</td>
+                    <td>@item.postal_code</td>
+                    <td>@item.collection_date</td>
+                    <td>@item.collection_time</td>
+                    <td>@item.type_of_waste</td>
+                    <td>@item.request</td>
+                    <td>@item.status</td>
+                    <td>
+                        <a asp-page="/Users/Donation/Details" asp-route-id="@item.user_donation_id">Update</a>
+                        <a asp-page="/Users/Donation/Delete" asp-route-id="@item.user_donation_id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary mt-3" asp-page="/Users/Donation/Add" asp-route-userid="@Model.UserID">Make a donation request</a>

@@ -1,0 +1,17 @@
+﻿@page
+@model EDP.Pages.PaymentModel
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+@{
+                if (Model.ChosenVoucher != null)
+                {
+                    <a asp-page="/PurchaseHistory/AddPurchaseHistory" asp-route-voucherid="@Model.ChosenVoucher.voucher_id" asp-route-paymentReferenceCode="@Model.paymentReferenceCode" class="btn-block btn btn-success">Checkout</a>
+                }
+                else
+                {
+                    <a asp-page="/PurchaseHistory/AddPurchaseHistory" asp-route-paymentReferenceCode="@Model.paymentReferenceCode" class="btn-block btn btn-success">Checkout</a>
+                }
+            }

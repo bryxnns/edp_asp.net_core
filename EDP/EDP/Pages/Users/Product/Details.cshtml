@@ -1,0 +1,60 @@
+﻿@page
+@model EDP.Pages.Users.Product.DetailsModel
+@{
+}
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-item-center">
+            <div class="col-md-6">
+                <img id="imgPreview" style="height:600px;width:600px;object-fit:cover"
+                     src="@(string.IsNullOrEmpty(Model.myProduct.product_image) ? "/images/user.png" : Model.myProduct.product_image)"
+                     onerror="this.src='/images/user.png'" />
+                <input class="form-control d-none" asp-for="@Model.myProduct.product_image" />
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder">@Model.myProduct.product_name</h1>
+                <div class="fs-5 mb-5">
+                    <span>$@Model.myProduct.price</span>
+                </div>
+                <p class="lead">
+                    @Model.myProduct.description
+                </p>
+                @{
+                    if (Model.MyCart == null)
+                    {
+                        <form class="mt-3" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <input type="hidden" asp-for="@Model.MyCart.cart_id" id="voucherid" value="@Model.UUID"/>
+                    <input type="hidden" asp-for="@Model.MyCart.product_id" id="voucherid" value="@Model.myProduct.product_id"/>
+                    <input type="hidden" asp-for="@Model.MyCart.user_id" id="voucherid" value="@Model.user_id"/>
+                     <label class="col-sm-2 col-form-label" asp-for="@Model.MyCart.quantity"></label>
+                    <input class="form-control" type="number" asp-for="@Model.MyCart.quantity" min="1" value="@Model.Quantity" />
+                    <span asp-validation-for="@Model.MyCart.quantity" class="text-danger"></span>
+
+                    <input type="submit" id="submitBtn" value="Add to cart" class="btn btn-primary" />
+                        </form>
+                    }
+                    else
+                    {
+                        <form class="mt-3" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                   <input type="hidden" asp-for="@Model.MyCart.cart_id" id="voucherid" value="@Model.UUID"/>
+                    <input type="hidden" asp-for="@Model.MyCart.product_id" id="voucherid" value="@Model.myProduct.product_id"/>
+                    <input type="hidden" asp-for="@Model.MyCart.user_id" id="voucherid" value="@Model.user_id"/>
+                     <label class="col-sm-2 col-form-label" asp-for="@Model.MyCart.quantity"></label>
+                    <input class="form-control" type="number" asp-for="@Model.MyCart.quantity" min="1"  value="@Model.Quantity"  />
+                    <span asp-validation-for="@Model.MyCart.quantity" class="text-danger"></span>
+
+                    <input type="submit" id="submitBtn" value="Update Quantity" class="btn btn-primary" />
+                        </form>
+                    }
+                }
+               
+     
+            </div>
+        </div>
+    </div>
+</section>
