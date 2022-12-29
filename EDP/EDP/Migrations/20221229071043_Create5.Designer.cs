@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20221227071056_Create4")]
-    partial class Create4
+    [Migration("20221229071043_Create5")]
+    partial class Create5
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -213,8 +213,16 @@ namespace EDP.Migrations
                     b.Property<string>("purchased_item_id")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("expiry_date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("product_image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("product_name")
                         .IsRequired()

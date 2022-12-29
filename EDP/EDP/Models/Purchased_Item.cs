@@ -12,6 +12,13 @@ namespace EDP.Models
 		[Required]
 		public decimal price { get; set; }
 
+		[Required, Display(Name = "Expiry Date")]
+		public string expiry_date { get; set; } = string.Empty;
+
+		//didnt make image compulsory
+		[Display(Name = "Product Image")]
+		public string product_image { get; set; } = string.Empty;
+
 		[Required]
 		public int quantity { get; set; }
 

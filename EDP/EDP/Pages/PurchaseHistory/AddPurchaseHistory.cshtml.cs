@@ -102,6 +102,8 @@ namespace EDP.Pages.PurchaseHistory
                         Purchased_Item purchasedItem=new Purchased_Item();
                         purchasedItem.price = product.price;
                         purchasedItem.quantity=item.quantity;
+                        purchasedItem.expiry_date=product.expiry_date;
+                        purchasedItem.product_image=product.product_image;
                         purchasedItem.purchase_history_id = purchaseHistoryID;
                         purchasedItem.product_name = product.product_name;
                         purchasedItem.purchased_item_id= purchasedItemUUID;

@@ -211,8 +211,16 @@ namespace EDP.Migrations
                     b.Property<string>("purchased_item_id")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("expiry_date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("product_image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("product_name")
                         .IsRequired()
