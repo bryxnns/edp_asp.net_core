@@ -295,3 +295,4 @@ C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP 
 C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\EDP.genruntimeconfig.cache
 C:\Users\aaral\Downloads\Year 2 Homework for modules\Enterprise Development\EDP project2\EDP\EDP\obj\Debug\net6.0\ref\EDP.dll
 C:\Users\bryan\Desktop\edp_asp.net\EDP\EDP\bin\Debug\net6.0\BCrypt.Net-Core.dll
+C:\Users\ASUS\OneDrive\Documents\y2s2\enterprise dev proj\source\repos\Assigment\EDP\EDP\bin\Debug\net6.0\BCrypt.Net-Core.dll

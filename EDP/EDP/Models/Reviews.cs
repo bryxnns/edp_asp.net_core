@@ -15,5 +15,8 @@ namespace EDP.Models
 
 		[Required, Display(Name = "Reviews")]
 		public string review { get; set; } = string.Empty;
-	}
+
+        [Display(Name = "Reviews Image")]
+        public string review_image { get; set; } = string.Empty;
+    }
 }

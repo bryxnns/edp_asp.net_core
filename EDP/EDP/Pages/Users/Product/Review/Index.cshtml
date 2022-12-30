@@ -1,0 +1,36 @@
+﻿@page
+@model EDP.Pages.Users.Product.Review.IndexModel
+@{
+    ViewData["Title"] = "My Reviews";
+}
+
+<h1 class="display-4">@ViewData["Title"]</h1>
+            <table class="table mt-3">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.ReviewsByUserList[0].review)</th>
+                        <th>@Html.DisplayNameFor(model => model.ReviewsByUserList[0].review_image)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+            @foreach (var item in Model.ReviewsByUserList)
+                        {
+                            <tr>
+                                <td>@item.review</td>
+                                <td>
+                                    <img id="imgPreview" style="height:100px;width:100px;object-fit:cover"
+                                     src="@(string.IsNullOrEmpty(item.review_image) ? "/images/user.png" : item.review_image)"
+                                     onerror="this.src='/images/user.png'" />
+                                    <input class="form-control d-none" asp-for="@item.review_image" />
+                                </td>
+                                <td>
+                                    <a asp-page="/Users/Product/Review/Details" asp-route-id="@item.review_id">Edit</a><br />
+                                    <a asp-page="/Users/Product/Review/Delete" asp-route-id="@item.review_id">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>

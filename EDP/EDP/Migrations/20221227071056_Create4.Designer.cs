@@ -12,8 +12,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
+<<<<<<<< HEAD:EDP/EDP/Migrations/20221227071056_Create4.Designer.cs
     [Migration("20221227071056_Create4")]
     partial class Create4
+========
+    [Migration("20221226154436_Create2")]
+    partial class Create2
+>>>>>>>> yanshuen:EDP/EDP/Migrations/20221226154436_Create2.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -242,6 +247,10 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("review")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("review_image")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
