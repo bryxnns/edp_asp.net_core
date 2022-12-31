@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
+<<<<<<<< HEAD:EDP/EDP/Migrations/20221226154436_Create2.Designer.cs
 <<<<<<<< HEAD:EDP/EDP/Migrations/20221227071056_Create4.Designer.cs
     [Migration("20221227071056_Create4")]
     partial class Create4
@@ -19,6 +20,10 @@ namespace EDP.Migrations
     [Migration("20221226154436_Create2")]
     partial class Create2
 >>>>>>>> yanshuen:EDP/EDP/Migrations/20221226154436_Create2.Designer.cs
+========
+    [Migration("20221224055408_InitialCreate")]
+    partial class InitialCreate
+>>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn):EDP/EDP/Migrations/20221224055408_InitialCreate.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -60,6 +65,7 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_code")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_id")
@@ -192,8 +198,9 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("percentage_off")
-                        .HasColumnType("int");
+                    b.Property<string>("percentage_off")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("purchase_date")
                         .HasColumnType("datetime2");
@@ -206,6 +213,7 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("purchase_history_id");
@@ -315,9 +323,6 @@ namespace EDP.Migrations
 
                     b.Property<DateTime>("expiry_date")
                         .HasColumnType("datetime2");
-
-                    b.Property<double>("min_spend")
-                        .HasColumnType("float");
 
                     b.Property<string>("percentage_off")
                         .IsRequired()

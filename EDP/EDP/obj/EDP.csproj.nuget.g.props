@@ -8,7 +8,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\aaral\.nuget\packages\</NuGetPackageFolders>
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\bryan\.nuget\packages\</NuGetPackageFolders>
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
 =======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\bryan\.nuget\packages\</NuGetPackageFolders>
 >>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
@@ -19,6 +23,7 @@
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <SourceRoot Include="C:\Users\aaral\.nuget\packages\" />
@@ -37,6 +42,9 @@
 =======
     <SourceRoot Include="C:\Users\bryan\.nuget\packages\" />
 >>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
+=======
+    <SourceRoot Include="C:\Users\bryan\.nuget\packages\" />
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.7\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.7\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
@@ -46,10 +54,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\aaral\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
 =======
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ASUS\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
 >>>>>>> yanshuen
+=======
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\bryan\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
 =======
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\bryan\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
 >>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)

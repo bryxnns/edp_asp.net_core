@@ -13,6 +13,10 @@ namespace EDP.Migrations
 {
     [DbContext(typeof(MyDbContext))]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:EDP/EDP/Migrations/20221226154436_Create2.Designer.cs
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
 <<<<<<<< HEAD:EDP/EDP/Migrations/20221227071056_Create4.Designer.cs
     [Migration("20221227071056_Create4")]
     partial class Create4
@@ -20,9 +24,16 @@ namespace EDP.Migrations
     [Migration("20221226154436_Create2")]
     partial class Create2
 >>>>>>>> yanshuen:EDP/EDP/Migrations/20221226154436_Create2.Designer.cs
+<<<<<<< HEAD
 =======
     [Migration("20221224055408_InitialCreate")]
     partial class InitialCreate
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
+=======
+========
+    [Migration("20221224055408_InitialCreate")]
+    partial class InitialCreate
+>>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn):EDP/EDP/Migrations/20221224055408_InitialCreate.Designer.cs
 >>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
