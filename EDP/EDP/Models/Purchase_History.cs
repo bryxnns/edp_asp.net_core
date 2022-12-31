@@ -15,13 +15,13 @@ namespace EDP.Models
 		[Required]
 		public string payment_reference_code { get; set; }
 
-	
+		[Required]
 		[Display(Name = "Voucher Name")]
-		public string? voucher_name { get; set; }
+		public string voucher_name { get; set; }
 
-
+		[Required]
 		[Display(Name = "Percentage Off")]
-		public int? percentage_off { get; set; }
+		public string percentage_off { get; set; }
 
 
 		[Required]

@@ -185,8 +185,9 @@ namespace EDP.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("percentage_off")
-                        .HasColumnType("int");
+                    b.Property<string>("percentage_off")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("purchase_date")
                         .HasColumnType("datetime2");
@@ -199,6 +200,7 @@ namespace EDP.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("voucher_name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("purchase_history_id");

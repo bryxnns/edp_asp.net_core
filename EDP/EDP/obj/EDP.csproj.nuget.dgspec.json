@@ -2,14 +2,19 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj": {}
+=======
+    "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj": {}
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
   },
   "projects": {
-    "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj": {
+    "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj",
+        "projectUniqueName": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
         "projectName": "EDP",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\EDP.csproj",
         "packagesPath": "C:\\Users\\aaral\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\obj\\",
@@ -26,17 +31,26 @@
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ASUS\\OneDrive\\Documents\\y2s2\\enterprise dev proj\\source\\repos\\Assigment\\EDP\\EDP\\obj\\",
 >>>>>>> yanshuen
+=======
+        "projectPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\EDP.csproj",
+        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bryan\\Desktop\\edp_asp.net\\EDP\\EDP\\obj\\",
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
           "C:\\Users\\aaral\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
 >>>>>>> yanshuen
+=======
+          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +106,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -105,10 +120,14 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
 >>>>>>> yanshuen
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+>>>>>>> parent of 3a18f09 (Merge pull request #15 from bryxnns/Lyn)
         }
       }
     }
