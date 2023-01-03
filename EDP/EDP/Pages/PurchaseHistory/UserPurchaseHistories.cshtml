@@ -8,54 +8,98 @@
 @{
     foreach (var PH in Model.UserPurchaseHistories)
     {
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    Order Number:
-                    <br>
-                    @PH.purchase_history_id
-                </div>
-                <div class="col-sm">
-                    Date of order:
-                    <br>
-                    @PH.purchase_date.ToShortDateString()
-                </div>
-                <div class="col-sm">
-                    Payment Reference Code:
-                    <br>
-                    @PH.payment_reference_code
+        <div class="shadow p-3 mb-5 bg-white rounded">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        Order Number:
+                        <br>
+                        @PH.purchase_history_id
+                    </div>
+                    <div class="col-sm">
+                        Date of order:
+                        <br>
+                        @PH.purchase_date.ToShortDateString()
+                    </div>
+                    <div class="col-sm">
+                        Payment Reference Code:
+                        <br>
+                        @PH.payment_reference_code
+                    </div>
                 </div>
             </div>
-        </div>
+            <br/>
+            <br/>
 
-        foreach (var item in Model.UserPurchaseItems)
-        {
-            if (item.purchase_history_id == PH.purchase_history_id)
-            {
-                <div class="row">
-                    <div class="col">
-                        <img id="imgPreview" class="rounded-3" width="100" style="float:left;padding-right:20px;"
-                         src="@(string.IsNullOrEmpty(item.product_image) ? "/images/user.png" : item.product_image)"
-                         onerror="this.src='/images/user.png'" />
-                       
-                        
-                        <h6 class="text-black mb-0 " style="padding-left:20px;">@item.product_name</h6>
-                        <h6 class="text-muted">Expiry date: @item.expiry_date</h6>
- 
-                        <h6 class="text-muted">Price for one: @String.Format("{0:c}", item.price)</h6>
-                    </div>
-                    <div class="col-4 col-lg-2">
-                   <h6 class="text-black mb-0 " style="padding-left:20px;">@item.quantity</h6>
-
-                    </div>
-               
-
+            <div class="row">
+                <div class="col">
+                    <h6 class="text-black mb-0 ">Product Information</h6>
                 </div>
-            
-                <br>
+                <div class="col-md-auto">
+                    <h6 class="text-black mb-0 ">Quantity</h6>
+                </div>
+                <div class="col col-lg-2">
+                    <h6 class="text-black mb-0 ">Actions</h6>
+                </div>
+            </div>
+
+            <hr />
+
+            @foreach (var item in Model.UserPurchaseItems)
+            {
+                if (item.purchase_history_id == PH.purchase_history_id)
+                {
+                    <div class="row">
+                        <div class="col">
+                            <img id="imgPreview" class="rounded-3" width="100" style="float:left;padding-right:20px;"
+                     src="@(string.IsNullOrEmpty(item.product_image) ? "/images/user.png" : item.product_image)"
+                     onerror="this.src='/images/user.png'" />
+
+
+                            <h6 class="text-black mb-0 " style="padding-left:20px;">@item.product_name</h6>
+                            <h6 class="text-muted">Expiry date: @item.expiry_date</h6>
+
+                            <h6 class="text-muted">Price for one: @String.Format("{0:c}", item.price)</h6>
+                        </div>
+                        <div class="col-md-auto">
+                            <h6 class="text-black mb-0 " style="padding-left:20px;">@item.quantity</h6>
+
+                        </div>
+                        <div class="col col-lg-2">
+                            <a type="button" class="btn btn-primary" asp-area="" asp-page="#">Review</a>
+                        </div>
+
+
+                    </div>
+
+                    <br>
+                }
             }
-        }
+
+            @if (@PH.voucher_name != null)
+            {
+                <div class="shadow p-3 mb-5 bg-body rounded">
+                <div class="mx-auto">
+                    Voucher used: 
+                    <h6 class="text-black mb-0">@PH.voucher_name</h6>
+                    <br />
+                    Percentage off:
+                    <h6 class="text-black mb-0">@PH.percentage_off %</h6>
+                    </div>
+                </div>
+            }
+            <p>Total Price (including shipping fee & shipping Guarantee):</p>
+            
+            <h6 class="text-black mb-0 ">$@PH.total_price.ToString("0.00")</h6>
+
+            <br>
+            @if (@PH.voucher_name != null)
+            {
+                <p>Discounted Price (After Discount):<h6 class="text-black mb-0 "> $@PH.discounted_price.ToString("0.00")</h6></p>
+            }
+        </div>
         <br />
+
     }
 }
 

@@ -7,6 +7,9 @@ namespace EDP.Pages.PurchaseHistory
 {
     public class UserPurchaseHistoriesModel : PageModel
     {
+        public double shippingFee = 1.00;
+        public double shippingGuarantee = 1.37;
+
         private readonly PurchasedItemService _purchasedItemService;
         private readonly PurchaseHistoryService _purchaseHistoryService;
 

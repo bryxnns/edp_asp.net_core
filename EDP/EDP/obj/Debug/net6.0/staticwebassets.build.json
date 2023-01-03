@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bq72eDTfjlRh1f9MCNzjmq7u4ft/5PbrnlmMP9knuBI=",
+  "Hash": "tlcTSnrovHpo2dv/CokIM8Y5miFzCS38ZrIp9pet08A=",
   "Source": "EDP",
   "BasePath": "_content/EDP",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\457f5c13-fcf8-496b-9b07-fed3195829f5.png"
+    },
+    {
+      "Identity": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\wwwroot\\images\\a960e93d-aebd-4334-9dae-62f5c5717580.png",
+      "SourceId": "EDP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\wwwroot\\",
+      "BasePath": "_content/EDP",
+      "RelativePath": "images/a960e93d-aebd-4334-9dae-62f5c5717580.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a960e93d-aebd-4334-9dae-62f5c5717580.png"
     },
     {
       "Identity": "C:\\Users\\aaral\\Downloads\\Year 2 Homework for modules\\Enterprise Development\\EDP project2\\EDP\\EDP\\wwwroot\\images\\bg-01.png",
